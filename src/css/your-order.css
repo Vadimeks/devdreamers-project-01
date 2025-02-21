@@ -1,6 +1,7 @@
-.section-footer {
-  background-color: #7a3145;
+.section-order {
   height: 200px;
   padding: 16px 0;
+}
+.header-order {
   color: #fbfbfb;
 }

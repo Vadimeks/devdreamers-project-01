@@ -1,6 +1,8 @@
-.section-footer {
+.section-vegetables {
   background-color: #7a3145;
   height: 200px;
   padding: 16px 0;
+}
+.vegetables-header {
   color: #fbfbfb;
 }
