@@ -3,3 +3,9 @@
   height: 300px;
   padding: 16px 0;
 }
+.reviews-title {
+  text-transform: uppercase;
+}
+.reviews-accent {
+  color: #576f35;
+}
