@@ -1,7 +1,45 @@
 .section-order {
-  height: 200px;
-  padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
 }
-.header-order {
-  color: #fbfbfb;
-}
+
+.order-page {}
+
+.order-title {}
+
+.order-part {}
+
+.order-text {}
+
+.order-form-field {}
+
+.order-form {}
+
+.order-form-title {}
+
+.form-part {}
+
+.form-sub {}
+
+.order-form-input {}
+
+.form-input {}
+
+.form-textarea {}
+
+.form-btn {}
+
+.order-img-soc {}
+
+.order-image {}
+
+.order-social {}
+
+.order-soc-text {}
+
+.order-soc-list {}
+
+.order-soc-item {}
+
+.socmedia-link {}
