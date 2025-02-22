@@ -1,7 +1,11 @@
 .section-reviews {
   background-color: #fff;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  padding: 100px 0; /* 100px сверху и снизу, 0 справа и слева */
 }
+/* .container.reviews-container {
+  padding: 0 32px; 32px справа и слева согласно макету
+} */
 
 .reviews-title {
   text-transform: uppercase;
@@ -16,7 +20,7 @@
 .reviews-accent {
   color: #576f35;
 }
-.reviews-feedback {
+.reviews-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -28,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  gap: 24px;
 }
 .revievs-сustomer {
   display: flex; /* Делаем <li> Flex-контейнером */
@@ -39,7 +43,7 @@
   border: 1px solid #d4bfc4;
   border-radius: 24px;
   padding: 20px;
-  min-height: 228px; /* Задаём минимальную высоту для видимости вертикального центрирования */
+  /* min-height: 228px; Задаём минимальную высоту для видимости вертикального центрирования */
 }
 
 li:nth-child(n + 2) {
@@ -62,4 +66,49 @@ li:nth-child(n + 2) {
   text-align: center;
   color: #858585;
   max-width: 288px;
+}
+@media screen and (min-width: 768px) {
+  .container.reviews-container {
+    max-width: 704px;
+    /* padding: 0 32px; */
+  }
+
+  /* .section-reviews {
+    padding: 32px 0;
+  } */
+
+  .reviews-title {
+    font-size: 64px;
+    line-height: 1;
+    color: #141414;
+    margin-bottom: 20px;
+  }
+  .reviews-text {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #141414;
+    margin-bottom: 52px;
+    max-width: 553px;
+  }
+  .revievs-сustomer {
+    min-height: 248px; /* Задаём минимальную высоту для видимости вертикального центрирования */
+    gap: 24px;
+  }
+
+  /* Показываем второй <li>, скрываем только третий */
+  li:nth-child(2) {
+    display: flex; /* Включаем второй <li> */
+  }
+
+  li:nth-child(3) {
+    display: none; /* Скрываем третий <li> */
+  }
+
+  .text-customer {
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    color: #858585;
+    max-width: 288px;
+  }
 }
