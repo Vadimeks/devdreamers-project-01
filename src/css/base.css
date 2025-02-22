@@ -4,7 +4,11 @@ body {
   color: #141414;
   font-style: normal;
 }
-
+section {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 a,
 button {
   text-decoration: none;
