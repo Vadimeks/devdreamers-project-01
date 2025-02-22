@@ -10,71 +10,87 @@
         today and start enjoying the best that nature has to offer!
       </p>
     </div>
-    <div class="order-form-field">
-      <form class="order-form">
-        <h2 class="order-form-title">
-          Ordering <span class="form-part">from us</span> is quick and easy!
-          Fill out <span class="form-sub">the form</span> below and we will
-          contact you !
-        </h2>
-        <div class="order-form-input">
-          <input
-            class="form-input"
-            type="text"
-            name="name"
-            placeholder="Full Name"
+    <div class="order-form-socmedia">
+      <div class="order-form-field">
+        <form class="order-form">
+          <h2 class="order-form-title">
+            Ordering <span class="form-part">from us</span> is quick and easy!
+            Fill out <span class="form-sub">the form</span> below and we will
+            contact you !
+          </h2>
+          <div class="order-form-input">
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              placeholder="Full Name"
+            />
+            <input
+              class="form-input input-email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <textarea
+              class="form-textarea"
+              type="comment"
+              id="comment"
+              placeholder="Comment"
+            ></textarea
+            ><button class="form-btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+      <div class="order-img-soc">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              /img/your-order/order.desktop-min.jpg   1x,
+              /img/your-order/order.desktop2x-min.jpg 2x
+            "
           />
-          <input
-            class="form-input input-email"
-            type="email"
-            name="email"
-            placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/your-order/order.tab-min.jpg   1x,
+              /img/your-order/order.tab2x-min.jpg 2x
+            "
           />
-          <textarea
-            class="form-textarea"
-            type="comment"
-            id="comment"
-            placeholder="Comment"
-          ></textarea
-          ><button class="form-btn" type="submit">Send</button>
-        </div>
-      </form>
-    </div>
-    <div class="order-img-soc">
-      <picture>
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            /img/your-order/order.mob-min.jpg   1x,
-            /img/your-order/order.mob2x-min.jpg 2x
-          "
-        />
-        <img
-          class="order-image"
-          src="../img/your-order/order.mob-min.jpg"
-          alt="girl making a smoothie"
-        />
-      </picture>
-      <p class="order-soc-text">Follow us on our social networks:</p>
-      <ul class="order-soc-list">
-        <li class="order-soc-item">
-          <a class="socmedia-link" href="https://www.instagram.com/goitclub/"
-            >Instagram</a
-          >
-        </li>
-        <li class="order-soc-item">
-          <a class="socmedia-link" href="https://www.facebook.com/goITclub/"
-            >Facebook</a
-          >
-        </li>
-        <li class="order-soc-item">
-          <a class="socmedia-link" href="https://www.youtube.com/c/GoIT"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/your-order/order.mob-min.jpg   1x,
+              /img/your-order/order.mob2x-min.jpg 2x
+            "
+          />
+          <img
+            class="order-image"
+            src="/img/your-order/order.desktop-min.jpg"
+            alt="girl making a smoothie"
+          />
+        </picture>
+        <p class="order-soc-text">Follow us on our social networks:</p>
+        <ul class="order-soc-list">
+          <li class="order-soc-item">
+            <a class="socmedia-link" href="https://www.instagram.com/goitclub/"
+              >Instagram</a
+            >
+          </li>
+          <li class="order-soc-item">
+            <a class="socmedia-link" href="https://www.facebook.com/goITclub/"
+              >Facebook</a
+            >
+          </li>
+          <li class="order-soc-item">
+            <a class="socmedia-link" href="https://www.youtube.com/c/GoIT"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

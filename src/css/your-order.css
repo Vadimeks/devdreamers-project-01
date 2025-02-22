@@ -6,11 +6,11 @@
     height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
-}
+    }
 
 .order-page {
     margin-bottom: 40px;
-}
+} 
 
 .order-title {
     font-size: 48px;
@@ -188,4 +188,108 @@
 
 .order-soc-list .order-soc-item:last-child::after {
     content: '';
+}
+
+@media only screen and (min-width: 768px){
+    .section-order {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .order-page {
+        margin-bottom: 52px;
+    }
+    .order-title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 1;
+        margin-bottom: 24px;
+    }
+    .order-text {
+        font-size: 16px;
+        line-height: 1.25;
+        color: #fbfbfb;
+    }
+    .order-form-socmedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .order-form {
+        width: 640px;
+        height: 632px;
+        padding: 72px 100px;
+        margin-bottom: 32px;
+    }
+    .order-form-title {
+        font-size: 32px;
+        margin-bottom: 52px;
+    }
+    .form-input {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 440px;
+        height: 52px;
+    }
+    .form-textarea {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 440px;
+        height: 96px;
+        margin-bottom: 24px;
+    }
+    .form-btn {
+        width: 440px;
+        height: 52px;
+    }
+    .order-img-soc {
+        padding: 52px;
+        width: 640px;
+    }
+    .order-image {
+        margin-bottom: 52px;
+    }
+    .order-soc-text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .order-soc-list {
+        gap: 12px;
+    }
+    .socmedia-link {
+        padding-right: 12px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .order-page {
+        text-align: left;
+        width: 751px;
+    }
+    .order-form-socmedia {
+        flex-direction: row;
+        gap: 32px;
+    }
+    .order-form {
+        width: 524px;
+        height: 592px;
+        padding: 52px 48px;
+        margin-bottom: 0;
+    }
+    .form-input {
+        width: 428px;
+    }
+    .form-textarea {
+        width: 428px;
+    }
+    .form-btn {
+        width: 428px;
+    }
+    .order-img-soc {
+        width: 524px;
+        padding: 52px 48px;
+    }
+    .order-image {
+        margin-bottom: 80px;
+    }
 }
