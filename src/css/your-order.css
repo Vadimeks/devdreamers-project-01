@@ -103,6 +103,7 @@
     padding: 16px 14px;
     margin-bottom: 20px;
     outline: none;
+    resize: none;
 }
 
 .form-textarea:focus {
