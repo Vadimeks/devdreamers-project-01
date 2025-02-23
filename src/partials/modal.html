@@ -1,6 +1,6 @@
-<div class="backdrop  is-open">
+<div class="backdrop  is-open" data-modal>
     <div class="modal-menu">
-        <button class="clouse" type="button">
+        <button class="clouse" type="button" data-modal-close>
             <svg class="icon-open" width="16" height="16">
                 <use href="./img/sprite.svg#icon-close">
             </svg>
@@ -12,13 +12,13 @@
         </p>
         <form class="form-modal">
             <div class="modal">
-                <input class="form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
-                <input class="form-input input-email" type="email" name="email" placeholder="Email"
+                <input class="input form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
+                <input class="input form-input input-email" type="email" name="email" placeholder="Email"
                     pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
-                <textarea name="form-textarea" class="user modal-area" id="user-comment"
+                <textarea name="form-textarea" class="input form-textarea" id="user-comment"
                     placeholder="Comment"></textarea>
             </div>
         </form>
-        <button class="send" type="button">Send</button>
+        <button class="form-btn" type="button">Send</button>
     </div>
 </div>
