@@ -1,8 +1,11 @@
 .section-reviews {
-  background-color: hsl(0, 0%, 100%);
-  padding: 80px 0;
-  width: 100%;
+
+  background-color: #fff;
+
+  padding: 20px 0;
 }
+
+
 
 .reviews-title {
   text-transform: uppercase;
@@ -16,7 +19,9 @@
 .reviews-accent {
   color: #576f35;
 }
-.reviews-text {
+
+.reviews-feedback {
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -28,18 +33,19 @@
 
 .reviews-list {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
 .reviews-item {
   width: 100%;
   max-width: 335px;
   border-radius: 24px;
-  padding: 20px 16px;
-  text-align: center;
-  box-sizing: border-box;
-  border: 1px solid #d4bfc4;
+
+  padding: 20px;
+
+  min-height: 228px; /* Задаём минимальную высоту для видимости вертикального центрирования */
 }
 
 .reviews-item:nth-child(n + 2) {
@@ -72,43 +78,5 @@
   text-align: center;
   color: #858585;
   max-width: 288px;
-}
 
-/* Tablet (768px) */
-@media only screen and (min-width: 768px) {
-  .reviews-title {
-    font-size: 64px;
-    line-height: 1;
-    margin-bottom: 24px;
-    width: 553px;
-  }
-
-  .reviews-text {
-    font-size: 16px;
-    line-height: 1.25;
-    margin-bottom: 52px;
-  }
-  .reviews-list {
-    gap: 24px;
-  }
-  .reviews-item:nth-child(1),
-  .reviews-item:nth-child(2) {
-    display: block; /* Показываем первые два пункта */
-  }
-  .reviews-item:nth-child(n + 3) {
-    display: none;
-  }
-  .text-customer {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    max-width: 303px;
-  }
-}
-
-/* Desktop */
-@media only screen and (min-width: 1280px) {
-  .reviews-item {
-    display: block; /* Показываем все элементы с классом .reviews-item */
-  }
 }
