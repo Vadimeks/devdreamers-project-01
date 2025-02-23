@@ -26,7 +26,7 @@
  }
 
  .vagetabels-subtitle {
-   padding-bottom: 12px;
+   margin-bottom: 12px;
    font-weight: 800;
    font-size: 28px;
    line-height: 1;
@@ -37,7 +37,7 @@
 
  .vagetabels-text {
    font-weight: 500;
-   padding-bottom: 12px;
+   margin-bottom: 12px;
    font-size: 14px;
    line-height: 1.42857;
    color: #141414;
