@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/devdreamers-project-01/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-B2cEpyyU.css">
+  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-DfCygJ3I.css">
 </head>
 
 <body>
@@ -22,6 +22,11 @@
     <h1 class="temp-header">HEADER</h1>
 
 
+
+    <!-- BUTTON OPEN -->
+    <button class="heder-open-btn" data-modal-open type="button">Open</button>
+
+    <script src="./js/modal.js"></script>
 </header>
 
   <main>
@@ -438,9 +443,10 @@
 <div class="mobile-menu">
     <h1 class="mobile-menu-header">Mobile menu</h1>
 </div>
-<div class="backdrop ">
+<div class="backdrop" data-modal>
+
     <div class="modal-menu">
-        <button class="clouse" type="button">
+        <button class="clouse" type="button" data-modal-close>
             <svg class="icon-open" width="16" height="16">
                 <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close">
             </svg>
@@ -452,14 +458,14 @@
         </p>
         <form class="form-modal">
             <div class="modal">
-                <input class="form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
-                <input class="form-input input-email" type="email" name="email" placeholder="Email"
+                <input class="input form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
+                <input class="input form-input input-email" type="email" name="email" placeholder="Email"
                     pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
-                <textarea name="form-textarea" class="user modal-area" id="user-comment"
+                <textarea name="form-textarea" class="input form-textarea" id="user-comment"
                     placeholder="Comment"></textarea>
             </div>
         </form>
-        <button class="send" type="button">Send</button>
+        <button class="form-btn" type="button">Send</button>
     </div>
 </div>
 
