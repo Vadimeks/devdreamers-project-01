@@ -1,5 +1,74 @@
 .section-reviews {
   background-color: #fff;
-  height: 300px;
-  padding: 16px 0;
+
+  padding: 20px 0;
+}
+
+
+.reviews-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 20px;
+}
+.reviews-accent {
+  color: #576f35;
+}
+
+.reviews-feedback {
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #141414;
+  margin-bottom: 40px;
+}
+
+.revievs-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 100%;
+
+}
+.revievs-сustomer {
+  display: flex; /* Делаем <li> Flex-контейнером */
+  flex-direction: column; /* Элементы внутри выстраиваются вертикально */
+  align-items: center; /* Центрируем по горизонтали (поперечная ось) */
+  justify-content: center; /* Центрируем по вертикали (главная ось) */
+  background-color: #fbfbfb;
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+  padding: 20px;
+
+  min-height: 228px; /* Задаём минимальную высоту для видимости вертикального центрирования */
+
+}
+
+li:nth-child(n + 2) {
+  display: none;
+}
+
+.revievs-card {
+  border-radius: 72px;
+  margin-bottom: 24px;
+}
+.title-customer {
+  margin-bottom: 8px;
+  text-align: center; /* Для текста внутри <h3> */
+}
+
+.text-customer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #858585;
+  max-width: 288px;
+
 }
