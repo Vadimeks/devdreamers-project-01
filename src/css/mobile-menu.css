@@ -31,7 +31,6 @@
 .menu-nav-item {
   border: 1px solid #fbfbfb;
   border-radius: 12px;
-  padding: 12px 16px;
   width: 118px;
   height: 44px;
   display: flex;
@@ -39,6 +38,11 @@
   justify-content: center;
   flex-direction: row;
   gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #fbfbfb;
 }
 .mobile-menu-button {
   margin: 0 auto;
