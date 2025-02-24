@@ -1,14 +1,20 @@
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .mobile-menu {
   background-color: #576F35;
-  position: fixed;
-  z-index: 20;
+  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
   display: flex;
   flex-direction: column;
   padding-bottom: 52px;
@@ -88,6 +94,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .menu-backdrop {
+    background-color: rgba(20, 20, 20, 0.4);
+  }
+
   .mobile-menu {
     width: 351px;
   }
@@ -109,3 +119,9 @@
     line-height: 1.25;
   }
 }
+
+/* @media only screen and (min-width: 1280px) {
+  .menu-backdrop {
+    display: none;
+  }
+} */
