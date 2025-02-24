@@ -1,5 +1,77 @@
 .section-reviews {
   background-color: #fff;
-  height: 300px;
-  padding: 16px 0;
+
+  padding: 20px 0;
+}
+
+.reviews-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: #141414;
+  margin-bottom: 20px;
+}
+.reviews-accent {
+  color: #576f35;
+}
+
+.reviews-feedback {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #141414;
+  margin-bottom: 40px;
+  text-align: left;
+  width: 100%;
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.reviews-item {
+  width: 100%;
+  max-width: 335px;
+  border-radius: 24px;
+
+  padding: 20px;
+
+  min-height: 228px; /* Задаём минимальную высоту для видимости вертикального центрирования */
+}
+
+.reviews-item:nth-child(n + 2) {
+  display: none;
+}
+
+.reviews-card {
+  border-radius: 72px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-customer {
+  margin-bottom: 8px;
+  text-align: center; /* Для текста внутри <h3> */
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+}
+
+.text-customer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #858585;
+  max-width: 288px;
 }
