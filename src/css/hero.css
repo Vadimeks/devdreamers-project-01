@@ -1,10 +1,16 @@
 .section-hero {
   position: relative;
   background-color: #576f35;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
   max-width: 767px;
 }
+
+.hero-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-title {
   text-transform: uppercase;
   font-weight: 600;
@@ -16,7 +22,8 @@
 }
 
 .hero-text {
-  padding-top: 100px;
+  padding: 100px 20px 0px 20px;
+  margin-bottom: 40px;
 }
 
 .hero-descr {
@@ -24,7 +31,6 @@
   font-size: 14px;
   line-height: 1.42857;
   color: #fbfbfb;
-  margin-bottom: 40px;
 }
 
 .hero-image {
@@ -35,7 +41,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 375px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 @media (min-resolution: 192dpi) {
@@ -49,8 +55,9 @@
 @media only screen and (min-width: 768px) {
   .hero-text {
     padding-top: 120px;
+    margin-bottom: 52px;
   }
-  
+
   .section-hero {
     max-width: 1279px;
   }
@@ -63,7 +70,7 @@
   .hero-descr {
     font-size: 16px;
     line-height: 1.25;
-    margin-bottom: 52px;
+
     max-width: 603px;
   }
 
@@ -82,19 +89,20 @@
 
 /* ---- HERO FOR PC's ---- */
 @media only screen and (min-width: 1280px) {
-  .container {
-    padding: 0px 36px 0px 100px;
+  .hero-container {
+    padding-left: 100px;
     margin: auto;
-  }
-
-  .section-hero {
-    display: flex;
     flex-direction: row;
   }
 
+  .section-hero {
+    max-width: 1280px;
+  }
+
   .hero-text {
-    max-width: 504px;
-    padding-top: 232px;
+    /* width: 504px; */
+    padding: 232px 36px 0px 0px;
+    margin-bottom: 52px;
   }
 
   .hero-title {
@@ -102,22 +110,20 @@
     font-weight: 600;
     font-size: 76px;
     margin-bottom: 128px;
-    /* max-width: 502px; */
+    width: 504px;
   }
 
   .hero-descr {
     font-size: 16px;
     line-height: 1.25;
-    margin-bottom: 52px;
-    max-width: 472px;
+    width: 472px;
+    /* height: 80px; */
   }
 
   .hero-image {
     background-image: url(/img/hero/hero-pc-min.jpg);
     width: 640px;
     height: 796px;
-    margin: 0;
-    /* justify-self: end; */
   }
 
   @media (min-resolution: 192dpi) {
