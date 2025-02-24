@@ -6,6 +6,9 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .mobile-menu {
@@ -43,17 +46,17 @@
   height: 32px;
 }
 
-.btn-list {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.menu-nav {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .btn-list-item {
@@ -120,8 +123,8 @@
   }
 }
 
-/* @media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   .menu-backdrop {
     display: none;
   }
-} */
+}
