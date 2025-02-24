@@ -3,6 +3,7 @@
   background-color: #576f35;
   display: flex;
   flex-direction: column;
+  max-width: 767px;
 }
 .hero-title {
   text-transform: uppercase;
@@ -48,6 +49,10 @@
 @media only screen and (min-width: 768px) {
   .hero-text {
     padding-top: 120px;
+  }
+  
+  .section-hero {
+    max-width: 1279px;
   }
 
   .hero-title {
