@@ -1,11 +1,8 @@
 .section-reviews {
-
   background-color: #fff;
 
   padding: 20px 0;
 }
-
-
 
 .reviews-title {
   text-transform: uppercase;
@@ -21,7 +18,6 @@
 }
 
 .reviews-feedback {
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -78,5 +74,4 @@
   text-align: center;
   color: #858585;
   max-width: 288px;
-
 }
