@@ -1,11 +1,30 @@
 <header class="header-section">
-
-    <h1 class="temp-header">HEADER</h1>
-
-
-
-    <!-- BUTTON OPEN -->
-    <button class="heder-open-btn" data-modal-open type="button">Open</button>
-
-    <script src="./js/modal.js"></script>
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="header-logo" href="/index.html">
+        <svg class="hed-logo-icon">
+          <use href="/img/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#how-it-works">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+      <button class="header-btn" type="button" data-modal-open>Shop now</button>
+    </nav>
+    <button class="burger-btn" type="button" data-menu-open>
+      <svg class="burger-icon">
+        <use href="/img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <load src="/partials/mobile-menu.html" />
+  <load src="/partials/modal.html" />
 </header>
