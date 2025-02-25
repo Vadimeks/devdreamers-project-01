@@ -1,8 +1,9 @@
+/* МАБІЛЬНАЕ МЕНЮ */
 .menu-backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 900; /* Ніжэй, чым хедэр */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -22,6 +23,7 @@
   flex-direction: column;
   padding-bottom: 52px;
   min-height: 380px;
+  z-index: 950; /* Ніжэй за хедэр, але вышэй за backdrop */
 }
 
 .is-open {
@@ -37,7 +39,7 @@
   height: 32px;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 20px; 
 }
 
 .menu-close-icon {
@@ -71,6 +73,11 @@
   line-height: 1.43;
   font-family: 'Inter Tight', sans-serif;
   letter-spacing: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-list-item:hover {
+  transform: scale(1.1);
 }
 
 .list-info-btn {
@@ -84,7 +91,7 @@
   height: 52px;
   border: none;
   border-radius: 30px;
-  background-color: #7A3145;
+  background-color: #7a3145;
   color: #FBFBFB;
   display: block;
   margin: 0 auto;
@@ -94,37 +101,10 @@
   font-weight: 600;
   line-height: 1.11;
   text-transform: uppercase;
+  transition: transform 0.2s ease-in-out;
 }
 
-@media only screen and (min-width: 768px) {
-  .menu-backdrop {
-    background-color: rgba(20, 20, 20, 0.4);
-  }
-
-  .mobile-menu {
-    width: 351px;
-  }
-
-  .menu-close-btn {
-    top: 42px;
-    right: 42px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .menu-close-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .btn-list-item {
-    font-size: 16px;
-    line-height: 1.25;
-  }
+.menu-shop-btn:hover {
+  transform: scale(1.1);
 }
 
-@media only screen and (min-width: 1280px) {
-  .menu-backdrop {
-    display: none;
-  }
-}

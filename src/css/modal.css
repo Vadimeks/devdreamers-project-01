@@ -42,33 +42,16 @@
               opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 768px) {
-  .modal-menu {
-
-    width: 524px;
-    height: 592px;
-    padding: 52px 48px;
-  }
-
-}
-
-@media only screen and (min-width: 1280px) {
-  .modal-menu {
-
-    width: 640px;
-    height: 632px;
-    padding: 72px 100px;
-
-  }
-}
 
 .close {
+  width: 24px;
+  height: 24px;
   background-color: #576f35;
   border: none;
   border-radius: 50px;
   fill: #fbfbfb;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   display: flex;
   cursor: pointer;
@@ -80,12 +63,12 @@
 
 .close:hover,
 .close:focus {
-  background-color: #7A3145;
+  background-color: #69873f;
+  transform: scale(1.1);
 }
 
-/* 🎯 СТЫЛІ ДЛЯ КНОПКІ "SEND" */
+/* styles button "SEND" */
 
-/* Звычайны стан */
 .form-btn {
   background-color: #7A3145;
 
@@ -100,41 +83,37 @@
   transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* Ховер і фокус */
 .form-btn:hover,
 .form-btn:focus {
   background-color: #D4BFC4;
   color: #7A3145;
 }
 
-/* 🔴 НЕАКТЫЎНАЯ КНОПКА (КАЛІ ФОРМА НЕ ЗАПОЎНЕНА) */
 .form-btn:disabled {
-  background-color: #FBFBFB; /* Светлы фон */
-  color: #7A3145; /* Цёмны тэкст */
-  border: 2px solid #7A3145; /* Дададзена рамка */
+  background-color: #FBFBFB;
+  color: #7A3145;
+  border: 2px solid #7A3145;
   cursor: not-allowed;
   opacity: 0.6;
 }
 
-/* 🎯 СТЫЛІ ДЛЯ ІНПУТАЎ */
+/*Input styles*/
 
-/* Калі поле няправільна запоўнена */
 input:required:invalid,
 textarea:required:invalid {
-  border: 2px solid #d9534f; /* Чырвоная рамка */
+  border: 2px solid #d9534f;
 }
 
-/* Калі поле запоўнена правільна */
 input:required:valid,
 textarea:required:valid {
   border: 2px solid #7A3145;
 }
 
-/* Фокус на інпут */
 input:focus,
 textarea:focus {
   outline: none;
   border-color: #D4BFC4;
 }
+
 
 
