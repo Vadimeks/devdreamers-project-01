@@ -12,16 +12,22 @@
 
         <form class="form-modal">
             <div class="modal">
-                <input class="input form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
+                <input class="input form-input" name="user-name" type="text" id="user-name" 
+                       placeholder="Full Name" required />
+
                 <input class="input form-input input-email" type="email" name="email" 
                     pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" 
                     placeholder="Email" required />
-                <textarea name="form-textarea" class="input form-textarea" id="user-comment"
-                    placeholder="Comment"></textarea>
-            </div>
-        </form>
 
-        <button class="form-btn send" type="button">Send</button>
+                <textarea name="form-textarea" class="input form-textarea" 
+                          id="user-comment" placeholder="Comment"></textarea>
+            </div>
+
+            <button class="form-btn send" type="submit" disabled>Send</button>
+        </form>
     </div>
 </div>
+
+
+
 
