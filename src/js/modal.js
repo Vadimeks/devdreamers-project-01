@@ -1,19 +1,24 @@
-(() => {
-  const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    // Додати атрибут data-modal-close на кнопку закриття
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    // Додати атрибут data-modal на бекдроп модалки
-    modal: document.querySelector('[data-modal]'),
-  };
-  if (refs.openModalBtn && refs.closeModalBtn && refs.modal) {
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.querySelector("[data-modal]");
+  if (!modal) return; // Калі мадальнага акна няма – выхад
 
-  function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
-    refs.modal.classList.toggle('is-open');
-  }
-})();
+  const openBtns = document.querySelectorAll("[data-modal-open]");
+  const closeBtns = document.querySelectorAll("[data-modal-close]");
+  const backdrop = document.querySelector(".backdrop");
+
+  const toggleModal = () => modal.classList.toggle("is-open");
+
+  openBtns.forEach(btn => btn.addEventListener("click", toggleModal));
+  closeBtns.forEach(btn => btn.addEventListener("click", toggleModal));
+
+  backdrop?.addEventListener("click", e => {
+    if (e.target === backdrop) toggleModal();
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) {
+      toggleModal();
+    }
+  });
+});
+
