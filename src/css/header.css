@@ -97,3 +97,30 @@
   }
 }
 
+.header-logo {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.header-logo:hover {
+  transform: scale(1.1); /* Павелічэнне на 10% */
+  opacity: 0.8; /* Лёгкая празрыстасць */
+  color: #d4bfc4;
+  
+}
+
+.nav-list .nav-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.nav-list .nav-link:hover {
+  transform: scale(1.05);
+  color: black;
+  background: rgba(255, 87, 51, 0.4);
+  border: 1px solid black;
+}
+.header-btn:hover {
+  background-color: #D4BFC4;
+  color: #7A3145;
+}
+.header-btn:focus {
+  background-color: #FBFBFB;
+  color: #7A3145
+}

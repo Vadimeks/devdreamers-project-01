@@ -1,15 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBackdrop = document.querySelector(".menu-backdrop");
-  const menuCloseBtn = document.querySelector(".menu-close-btn");
-
-  function closeMenu() {
-    menuBackdrop.classList.remove("is-open");
+(() => {
+  const refs = {
+    // Додати атрибут data-menu-open на кнопку відкриття
+    openModalBtn: document.querySelector('[data-menu-open]'),
+    // Додати атрибут data-menu-close на кнопку закриття
+    closeModalBtn: document.querySelector('[data-menu-close]'),
+    // Додати атрибут data-menu на бекдроп модалки
+    modal: document.querySelector('[data-menu]'),
+  };
+  if (refs.openModalBtn && refs.closeModalBtn && refs.modal) {
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
   }
 
-  menuCloseBtn.addEventListener("click", closeMenu);
-  menuBackdrop.addEventListener("click", function (event) {
-    if (event.target === menuBackdrop) {
-      closeMenu();
-    }
-  });
-});
+  function toggleModal() {
+    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
+    refs.modal.classList.toggle('is-open');
+  }
+})();

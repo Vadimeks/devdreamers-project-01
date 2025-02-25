@@ -57,13 +57,15 @@
 }
 
 .close {
+  width: 24px;
+  height: 24px;
   background-color: #576f35;
   border: none;
   border-radius: 50px;
   fill: #fbfbfb;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 44px;
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -74,7 +76,8 @@
 
 .close:hover,
 .close:focus {
-  background-color: #7A3145;
+  background-color: #69873f;
+  transform: scale(1.1);
 }
 
 /* 🎯 СТЫЛІ ДЛЯ КНОПКІ "SEND" */
@@ -102,9 +105,9 @@
 
 /* 🔴 НЕАКТЫЎНАЯ КНОПКА (КАЛІ ФОРМА НЕ ЗАПОЎНЕНА) */
 .form-btn:disabled {
-  background-color: #FBFBFB; /* Светлы фон */
-  color: #7A3145; /* Цёмны тэкст */
-  border: 2px solid #7A3145; /* Дададзена рамка */
+  background-color: #FBFBFB;
+  color: #7A3145;
+  border: 2px solid #7A3145;
   cursor: not-allowed;
   opacity: 0.6;
 }
@@ -114,7 +117,7 @@
 /* Калі поле няправільна запоўнена */
 input:required:invalid,
 textarea:required:invalid {
-  border: 2px solid #d9534f; /* Чырвоная рамка */
+  border: 2px solid #d9534f;
 }
 
 /* Калі поле запоўнена правільна */
@@ -129,4 +132,3 @@ textarea:focus {
   outline: none;
   border-color: #D4BFC4;
 }
-

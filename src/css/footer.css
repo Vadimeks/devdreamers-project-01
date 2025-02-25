@@ -117,9 +117,9 @@
 .footer-nav-link:hover,
 .address-list-link:hover,
 .footer-privacy-link:hover {
-  transform: scale(1.1); /* Павелічэнне на 10% */
-  opacity: 0.8; /* Лёгкая празрыстасць */
-  color: #d4bfc4; /* Новы колер пры навядзенні */
+  transform: scale(1.1); 
+  opacity: 0.8; 
+  color: #d4bfc4; 
 }
 
 @media only screen and (min-width: 768px) {
