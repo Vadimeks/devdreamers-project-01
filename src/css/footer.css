@@ -18,9 +18,9 @@
 
 .footer-text {
   font-weight: 500;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #fbfbfb;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fbfbfb;
 }
 
 .nav-wrapper {
@@ -37,11 +37,12 @@
 
 .footer-nav-link {
   font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .address-list {
@@ -50,16 +51,17 @@
   gap: 14px;
 }
 
-.address-list-item{
+.address-list-item {
   max-width: 179px;
-    max-height: 40px;
+  max-height: 40px;
 }
 
 .address-list-link {
   font-weight: 700;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #fbfbfb;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fbfbfb;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .footer-privacy-wrapper {
@@ -76,16 +78,17 @@
 
 .footer-privacy-link {
   font-weight: 500;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #d4bfc4;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #d4bfc4;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .footer-text-copy {
   font-weight: 500;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #d4bfc4;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #d4bfc4;
 }
 
 .footer-slash {
@@ -95,86 +98,103 @@
 .footer-slash::after {
   position: absolute;
   content: '/';
-  left:110%;
-font-weight: 500;
+  left: 110%;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.42857;
   color: #d4bfc4;
 }
 
+/* Анімацыя павелічэння і змены колеру для лагатыпа, меню, адрасу і палітык */
+.footer-logo,
+.footer-nav-link,
+.address-list-link,
+.footer-privacy-link {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer-logo:hover,
+.footer-nav-link:hover,
+.address-list-link:hover,
+.footer-privacy-link:hover {
+  transform: scale(1.1); 
+  opacity: 0.8; 
+  color: #d4bfc4; 
+}
+
 @media only screen and (min-width: 768px) {
- 
   .section-footer {
     padding: 32px 0;
   }
+
   .footer-text-wrapper {
     gap: 24px;
     max-width: 265px;
     max-height: 104px;
   }
 
-    .footer-logo-contact-wrapper {
-      flex-direction: row;
-      gap: 210px;
-    }
+  .footer-logo-contact-wrapper {
+    flex-direction: row;
+    gap: 210px;
+  }
 
-    .nav-wrapper {
-      gap: 64px;
-    }
+  .nav-wrapper {
+    gap: 64px;
+  }
 
-    .footer-nav-list {
-        gap: 24px;
-      }
+  .footer-nav-list {
+    gap: 24px;
+  }
 
-    .address-list {
-      gap: 24px;
-    }
+  .address-list {
+    gap: 24px;
+  }
 
-    .footer-privacy-wrapper {
-        margin-top: 100px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .footer-privacy-wrapper {
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .footer-text {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.25;
-        color: #fbfbfb;
-    }
+  .footer-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb;
+  }
 
-        .footer-privacy-link {
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 1.25;
-          color: #d4bfc4;
-        }
-    
-        .footer-text-copy {
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 1.25;
-          color: #d4bfc4;
-        }
+  .footer-privacy-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #d4bfc4;
+  }
 
-        .footer-logo {
-          width: 216px;
-          height: 20px;
-        }
+  .footer-text-copy {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #d4bfc4;
+  }
 
-        .address-list-item {
-          max-width: 215px;
-        }
+  .footer-logo {
+    width: 216px;
+    height: 20px;
+  }
 
-        .address-list-link {
-          font-size: 16px;
-          line-height: 1.25;
-        }
+  .address-list-item {
+    max-width: 215px;
+  }
 
-        .footer-slash::after {
-          font-size: 16px;
-          line-height: 1.25;
-        }
+  .address-list-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-slash::after {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -182,21 +202,21 @@ font-weight: 500;
     padding-top: 52px;
     padding-bottom: 52px;
   }
-  
+
   .footer-logo-contact-wrapper {
     gap: 250px;
   }
 
-    .nav-wrapper {
-      flex-direction: row;
-      gap: 121px;
-    }
+  .nav-wrapper {
+    flex-direction: row;
+    gap: 121px;
+  }
 
-        .footer-privacy-list {
-          gap: 30px;
-        }
+  .footer-privacy-list {
+    gap: 30px;
+  }
 
-            .footer-privacy-wrapper {
-              margin-top: 124px;
-            }
+  .footer-privacy-wrapper {
+    margin-top: 124px;
+  }
 }
