@@ -13,10 +13,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/devdreamers-project-01/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-B8GNYApK.css">
+  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-CFhxDRWV.css">
 </head>
 
 <body>
+  
   <header class="header-section">
   <div class="container header-container">
     <nav class="header-nav">
@@ -44,38 +45,75 @@
       </svg>
     </button>
   </div>
+  <div class="menu-backdrop" data-menu>
   <div class="mobile-menu">
-    <h1 class="mobile-menu-header">Mobile menu</h1>
+    <button type="button" class="menu-close-btn" data-menu-close>
+      <svg class="menu-close-icon">
+        <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close"></use>
+      </svg>
+    </button>
+    
+    <nav class="menu-nav">
+      <ul class="btn-list">
+        <li>
+          <button type="button" class="btn-list-item list-info-btn">
+            <a href="#how-it-works">How It Works</a>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-list-item">
+            <a href="#vegetables">Vegetables</a>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-list-item">
+            <a href="#reviews">Reviews</a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  
+    <button type="button" class="menu-shop-btn">Shop now</button>
+  </div>
 </div>
   <div class="backdrop" data-modal>
-
     <div class="modal-menu">
-        <button class="clouse" type="button" data-modal-close>
-            <svg class="icon-open" width="16" height="16">
-                <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close">
+        <button class="close" type="button" data-modal-close>
+            <svg class="icon-close" width="24" height="24"> 
+                <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close"></use>
             </svg>
         </button>
 
-        <p class="order-form-title">Ordering <span class="form-part">from us</span> is quick and easy! Fill out <span
-                class="form-sub">the
-                form</span> below and we will contact you !
+        <p class="order-form-title">Ordering <span class="form-part">from us</span> is quick and easy! Fill out 
+            <span class="form-sub">the form</span> below and we will contact you!
         </p>
+
         <form class="form-modal">
             <div class="modal">
-                <input class="input form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
-                <input class="input form-input input-email" type="email" name="email" placeholder="Email"
-                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
-                <textarea name="form-textarea" class="input form-textarea" id="user-comment"
-                    placeholder="Comment"></textarea>
+                <input class="input form-input" name="user-name" type="text" id="user-name" 
+                       placeholder="Full Name" />
+
+                <input class="input form-input input-email" type="email" name="email" 
+                    pattern="([A-z0-9_.-]+)@([A-z0-9_.-]+)\.([A-z]{2,8})" 
+                    placeholder="Email" required />
+
+                <textarea name="form-textarea" class="input form-textarea" 
+                          id="user-comment" placeholder="Comment"></textarea>
             </div>
+
+            <button class="form-btn send" type="submit" disabled>Send</button>
         </form>
-        <button class="form-btn" type="button">Send</button>
     </div>
 </div>
 
-</header>
 
 
+
+
+
+
+  
+  
   <main>
     <!-- Loads the specified .html file -->
     <section class="section-hero">
@@ -94,7 +132,7 @@
   </div>
 </section>
 
-    <section class="order-section">
+    <section class="order-section" id="how-it-works">
   <div class="order">
     <div class="image-container">
       <picture>
@@ -176,7 +214,7 @@
   </div>
 </section>
 
-    <section class="section-vegetables">
+    <section class="section-vegetables" id="vegetables">
     <div class="container">
         <h2 class="vegetables-title">Organic <span class="veg-title-span">vegetabels</span></h2>
         <p class="vegetables-text-info">
@@ -356,17 +394,15 @@
         </ul>
     </div>
 </section>
-    <section class="section-reviews">
-  <div class="container">
-
+    <section class="section-reviews" id="reviews">
+  <div class="container reviews-container">
     <h2 class="reviews-title">
       Reviews from our
       <span class="reviews-accent">customers</span>
     </h2>
 
 
-
-    <p class="reviews-feedback">
+    <p class="reviews-text">
 
       Words of our customers: impressions and opinions about the quality of our
       services and the freshness of our products.
@@ -401,9 +437,8 @@
         />
 
 
-
-        <h3>Victoria Romashenko</h3>
-        <p>
+        <h3 class="title-customer">Victoria Romashenko</h3>
+        <p class="text-customer">
 
           I love how fast and fresh the vegetables are delivered. Salads always
           turn out so appetizing, and soups are real masterpieces. The quality
@@ -421,10 +456,8 @@
         />
 
 
-
-        <h3>Ihor Trachuk</h3>
-        <p>
-
+        <h3 class="title-customer">Ihor Trachuk</h3>
+        <p class="text-customer">
 
           Recently tried my fresh tomatoes and peppers - amazing! The
           authenticity of the taste, as if from the garden directly to my table.
@@ -461,6 +494,7 @@
               type="text"
               name="name"
               placeholder="Full Name"
+              required
             />
             <input
               class="form-input input-email"
@@ -528,9 +562,11 @@
     <div class="container">
         <div class="footer-logo-contact-wrapper">
             <div class="footer-text-wrapper">
-                <svg class="footer-logo" width="168" height="16">
-                    <use class="footer-icon" href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-logo"></use>
-                </svg>
+                <a href="/index.html">
+                    <svg class="footer-logo" width="168" height="16">
+                        <use class="footer-icon" href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-logo"></use>
+                    </svg>
+                </a>
                 <p class="footer-text">Whether you're looking for a healthy snack or a thoughtful gift, our fruit
                     baskets
                     are the perfect choice.
@@ -539,9 +575,10 @@
             <div class="nav-wrapper">
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">how it works</a></li>
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">vegetables</a></li>
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">reviews</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#how-it-works">how it works</a>
+                        </li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#vegetables">vegetables</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#reviews">reviews</a></li>
                     </ul>
                 </nav>
                 <address class="footer-address">
@@ -566,36 +603,8 @@
         </div>
     </div>
 </footer>
-
+  
 </body>
-<div class="mobile-menu">
-    <h1 class="mobile-menu-header">Mobile menu</h1>
-</div>
-<div class="backdrop" data-modal>
-
-    <div class="modal-menu">
-        <button class="clouse" type="button" data-modal-close>
-            <svg class="icon-open" width="16" height="16">
-                <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close">
-            </svg>
-        </button>
-
-        <p class="order-form-title">Ordering <span class="form-part">from us</span> is quick and easy! Fill out <span
-                class="form-sub">the
-                form</span> below and we will contact you !
-        </p>
-        <form class="form-modal">
-            <div class="modal">
-                <input class="input form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
-                <input class="input form-input input-email" type="email" name="email" placeholder="Email"
-                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
-                <textarea name="form-textarea" class="input form-textarea" id="user-comment"
-                    placeholder="Comment"></textarea>
-            </div>
-        </form>
-        <button class="form-btn" type="button">Send</button>
-    </div>
-</div>
 
 
 </html>
