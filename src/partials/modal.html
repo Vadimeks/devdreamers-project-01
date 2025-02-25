@@ -1,3 +1,25 @@
-<div class="backdrop">
-    <h1 class="modal-header">Modal</h1>
+<div class="backdrop is-open" data-modal>
+
+    <div class="modal-menu">
+        <button class="clouse" type="button" data-modal-close>
+            <svg class="icon-open" width="16" height="16">
+                <use href="./img/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="order-form-title">Ordering <span class="form-part">from us</span> is quick and easy! Fill out <span
+                class="form-sub">the
+                form</span> below and we will contact you !
+        </p>
+        <form class="form-modal">
+            <div class="modal">
+                <input class="input form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
+                <input class="input form-input input-email" type="email" name="email" placeholder="Email"
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+                <textarea name="form-textarea" class="input form-textarea" id="user-comment"
+                    placeholder="Comment"></textarea>
+            </div>
+        </form>
+        <button class="form-btn send" type="button">Send</button>
+    </div>
 </div>
