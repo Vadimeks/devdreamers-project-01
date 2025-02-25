@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/devdreamers-project-01/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-CAuFzZUW.css">
+  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-D44akrye.css">
 </head>
 
 <body>
@@ -32,11 +32,86 @@
   <main>
     <!-- Loads the specified .html file -->
     <section class="section-hero">
-    <h1 class="hero-header">HERO</h1>
+  <div class="container hero-container">
+    <div class="hero-text">
+      <h1 class="hero-title">organic vegetables to your diet today!</h1>
+      <p class="hero-descr">
+        Our expertly curated vegetable baskets are made with the freshest,
+        highest quality vegetables available. Fresh Harvest Box has got you
+        covered. Fresh, high-quality vegetables in expertly curated vegetable
+        baskets delivered to you.
+      </p>
+      <p></p>
+    </div>
+    <div class="hero-image"></div>
+  </div>
 </section>
-    <section class="section-how">
-    <h1 class="how-header">How it works</h1>
+
+    <section class="order-section">
+  <div class="order">
+    <div class="image-container">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="/devdreamers-project-01/assets/h-it-w-desk-Crm7K5L_.webp 1x, /devdreamers-project-01/assets/h-it-w-desk@2x-ZL9JEU9t.webp 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/devdreamers-project-01/assets/h-it-w-tab-Ch6sPJbZ.webp 1x, /devdreamers-project-01/assets/h-it-w-tab@2x-r-xGsI3A.webp 2x"
+        />
+        <source
+          media="(max-width: 768px)"
+          srcset="/devdreamers-project-01/assets/h-it-w-mob-D-LO9h4F.webp 1x, /devdreamers-project-01/assets/h-it-w-mob@2x-8njAmMP4.webp 2x"
+        />
+        <img
+          class="content-image"
+          src="/devdreamers-project-01/assets/h-it-w-desk-Crm7K5L_.webp"
+          alt="Woman preparing vegetables"
+        />
+      </picture>
+    </div>
+    <div class="content">
+      <h1 class="visually-hidden">How to Order Your Vegetable Basket</h1>
+      <h2 class="content-title">
+        TO ORDER YOUR <span class="highlight">VEGETABLE</span> BASKET, 
+        SIMPLY FOLLOW THESE <span class="highlight">EASY STEPS</span>
+      </h2>
+      <p class="content-description">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh vegetables without ever
+        leaving your home.
+      </p>
+
+      <div class="steps">
+        <ol class="steps-list">
+          <li class="steps-item">
+            <p class="steps-item-text">
+              Just choose the
+              <strong class="steps-item-highlight">vegetable</strong> you want
+              to order by clicking on the checkboxes
+              <strong class="steps-item-highlight">next to it.</strong>
+            </p>
+          </li>
+          <li class="steps-item middle">
+            <p class="steps-item-text">
+              Click on
+              <strong class="steps-item-highlight">the basket</strong> and fill
+              out the form.
+            </p>
+          </li>
+          <li class="steps-item">
+            <p class="steps-item-text">
+              Sit back and relax! Your
+              <strong class="steps-item-highlight">fresh vegetables</strong>
+              basket will be delivered.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
 </section>
+
     <section class="section-advertisement">
   <h2 class="visually-hidden">Advertisement</h2>
   <div class="container advertisement-container">
@@ -350,7 +425,6 @@
             />
             <textarea
               class="form-textarea"
-              type="comment"
               id="comment"
               placeholder="Comment"
             ></textarea
