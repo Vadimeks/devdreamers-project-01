@@ -2,9 +2,99 @@
   position: absolute;
   top: 32px;
   left: 0;
-  padding: 16px 0;
+  width: 100%;
+  height: 100%;
   z-index: 10;
 }
-.temp-header {
-  margin-left: 16px;
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.hed-logo-icon {
+  width: 168px;
+  height: 16px;
+}
+
+.nav-list,
+.header-btn {
+  display: none;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.burger-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hed-logo-icon {
+    width: 216px;
+    height: 20px;
+  }
+  .burger-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .burger-btn {
+    display: none;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .hed-logo-icon {
+    margin-right: 340px;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+  }
+  .nav-link {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #fbfbfb;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    padding: 12px;
+  }
+  .header-btn{
+    display: block;
+    border-radius: 30px;
+    padding: 16px 32px;
+    min-width: 163px;
+    height: 52px;
+    background: #7a3145;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .burger-btn:hover,
+  .burger-btn:focus {
+    background-color: #d4bfc4;
+  }
+}
+
