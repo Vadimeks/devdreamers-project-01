@@ -8,8 +8,10 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 0.4), 
               visibility 250ms cubic-bezier(0.4, 0, 0.2, 0.4);
+
 }
 
 .backdrop.is-open {
@@ -39,6 +41,8 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
               opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .close {
   width: 24px;
   height: 24px;
@@ -67,6 +71,7 @@
 
 .form-btn {
   background-color: #7A3145;
+
   color: #FBFBFB;
   font-size: 16px;
   font-weight: 600;
@@ -110,22 +115,5 @@ textarea:focus {
   border-color: #D4BFC4;
 }
 
-@media only screen and (min-width: 768px) {
-  .modal-menu {
-    width: 524px;
-    height: 592px;
-    padding: 52px 48px;
-  }
-  .close {
-    top: 20px;
-    right: 44px;}
-}
 
-@media only screen and (min-width: 1280px) {
-  .modal-menu {
-    width: 640px;
-    height: 632px;
-    padding: 72px 100px;
-  }
-}
 
