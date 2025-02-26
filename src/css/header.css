@@ -1,28 +1,25 @@
-
-/* Header */
-
+/* ХЕДЭР */
 .header-section {
   position: absolute;
   top: 32px;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; /* Вышэй за мабільнае меню */
   transition: all 0.3s ease-in-out;
-  background: rgba(87, 111, 53, 0.9); /* mobile fon */
+  background: rgba(87, 111, 53, 0.9); /* Фон для мабільных */
 }
 
 .header-section.fixed {
   position: fixed;
   top: 0;
   background: rgba(87, 111, 53, 0.95);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкі цень */
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .hed-logo-icon {
@@ -87,9 +84,9 @@
     border: 1px solid #fbfbfb;
     border-radius: 12px;
     padding: 12px;
-    width: auto;
+    width: auto; /* Каб пункт не сціскаўся */
   }
-  .header-btn {
+  .header-btn{
     display: block;
     border-radius: 30px;
     padding: 16px 32px;
@@ -111,12 +108,12 @@
   .burger-btn:focus {
     background-color: #d4bfc4;
   }
-
+  
   .header-section {
     background: transparent;
   }
   .header-section.fixed {
-    background: rgba(87, 111, 53, 0.6);
+    background: rgba(87, 111, 53, 0.5);
   }
 }
 .header-logo {
@@ -138,10 +135,10 @@
   border: 1px solid black;
 }
 .header-btn:hover {
-  background-color: #d4bfc4;
-  color: #7a3145;
+  background-color: #D4BFC4;
+  color: #7A3145;
 }
 .header-btn:focus {
-  background-color: #fbfbfb;
-  color: #7a3145;
+  background-color: #FBFBFB;
+  color: #7A3145;
 }
