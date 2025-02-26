@@ -5,8 +5,8 @@
     modal: document.querySelector('[data-menu]'),
     shopNowBtn: document.querySelector('.menu-shop-btn'),
     modalWindow: document.querySelector('[data-modal]'),
-    menuLinks: document.querySelectorAll('.btn-list-item a'),
-    header: document.querySelector('.header-section'), // Выпраўлены клас
+    menuButtons: document.querySelectorAll('.btn-list-item'), // Кнопкі меню
+    header: document.querySelector('.header-section'), // Хедэр
     sideMenu: document.querySelector('.menu-backdrop')
   };
 
@@ -27,9 +27,16 @@
     refs.modal.classList.toggle('is-open');
   }
 
-  refs.menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      refs.modal.classList.remove('is-open');
+  // Дадаем падзею на кнопкі ў меню
+  refs.menuButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const targetId = button.getAttribute("data-scroll");
+      if (targetId) {
+        document.querySelector(targetId).scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+      refs.modal.classList.remove('is-open'); // Закрываем меню
     });
   });
 
