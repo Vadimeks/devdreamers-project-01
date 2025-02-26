@@ -6,7 +6,8 @@
     shopNowBtn: document.querySelector('.menu-shop-btn'),
     modalWindow: document.querySelector('[data-modal]'),
     menuLinks: document.querySelectorAll('.btn-list-item a'),
-    header: document.querySelector('.header-section') // Выпраўлены клас
+    header: document.querySelector('.header-section'), // Выпраўлены клас
+    sideMenu: document.querySelector('.menu-backdrop')
   };
 
   if (refs.openModalBtn && refs.closeModalBtn && refs.modal) {
@@ -16,6 +17,7 @@
 
   if (refs.shopNowBtn && refs.modalWindow) {
     refs.shopNowBtn.addEventListener('click', () => {
+      refs.modal.classList.remove('is-open');
       refs.modalWindow.classList.add('is-open');
       refs.modalWindow.style.zIndex = '300';
     });
