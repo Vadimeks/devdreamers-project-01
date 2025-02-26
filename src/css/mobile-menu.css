@@ -1,6 +1,141 @@
-.mobile-menu {
-  background-color: #576f35;
+/* mobile menu*/ 
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 950;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 0.4), visibility 250ms cubic-bezier(0.4, 0, 0.2, 0.4);
 }
-.mobile-menu-header {
-  color: #fbfbfb;
+
+.mobile-menu {
+  background-color: #576F35;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 52px;
+  min-height: 380px;
+
+  z-index: 900; 
+
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-close-btn {
+  border: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px; 
+}
+
+.menu-close-icon {
+  fill: #FBFBFB;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.btn-list-item {
+  width: 118px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #FBFBFB;
+  background-color: transparent;
+  color: #FBFBFB;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  font-family: 'Inter Tight', sans-serif;
+  letter-spacing: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-list-item:hover {
+  transform: scale(1.1);
+}
+
+.list-info-btn {
+  background-color: #FBFBFB;
+  color: #7A3145;
+  border: none;
+}
+
+.menu-shop-btn {
+  width: 175px;
+  height: 52px;
+  border: none;
+  border-radius: 30px;
+  background-color: #7a3145;
+  color: #FBFBFB;
+  display: block;
+  margin: 0 auto;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  line-height: 1.11;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-backdrop {
+    background-color: rgba(20, 20, 20, 0.4);
+  }
+
+  .mobile-menu {
+    width: 351px;
+  }
+
+  .menu-close-btn {
+    top: 42px;
+    right: 42px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-close-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-list-item {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .menu-backdrop {
+    display: none;
+  }
 }

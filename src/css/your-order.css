@@ -135,9 +135,9 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-btn:hover,
 .form-btn:focus {
-    background-color: #d4bfc4;
+    background-color: #fbfbfb;
+    color: #7a3145;
 }
 
 .order-img-soc {
@@ -232,7 +232,7 @@
         line-height: 1.25;
         width: 440px;
         height: 52px;
-        padding: 16px ;
+        padding: 16px 14px;
     }
     .form-textarea {
         font-size: 16px;
@@ -287,6 +287,10 @@
     }
     .form-btn {
         width: 428px;
+    }
+    .form-btn:hover {
+        background-color: #d4bfc4;
+        color: #7a3145;
     }
     .order-img-soc {
         width: 524px;
