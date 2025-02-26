@@ -9,8 +9,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 0.4),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 0.4);
 }
 
 .backdrop.is-open {
@@ -40,21 +40,17 @@
 
 @media only screen and (min-width: 768px) {
   .modal-menu {
-    width: 640px;
-    height: 632px;
-    padding: 72px 100px;
-  }
-
-  .modal {
-    margin-bottom: 24px;
+    width: 524px;
+    height: 592px;
+    padding: 52px 48px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .modal-menu {
-    width: 524px;
-    height: 592px;
-    padding: 52px 48px;
+    width: 640px;
+    height: 632px;
+    padding: 72px 100px;
   }
 }
 
@@ -74,13 +70,53 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .clouse:hover,
 .clouse:focus {
   border: none;
   background-color: #7A3145;
 }
 
-.modal {
-  margin-bottom: 20px;
+
+/* кнопка send  у Іри немає цихстилів*/
+
+.form-btn:disabled {
+  background-color: #FBFBFB;
+  color: #7A3145;
+  border: 2px solid #7A3145;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* інпути
+.form-input::placeholder {
+  font-family: inherit;
+  color: #141414;
+}
+
+.form-input:focus {
+  border-color: #7a3145;
+}
+
+.input-email:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+.input-email:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+ */
+input:required:invalid,
+textarea:required:invalid {
+  border: 2px solid #d9534f;
+}
+
+input:required:valid,
+textarea:required:valid {
+  border: 2px solid #7A3145;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #D4BFC4;
 }
