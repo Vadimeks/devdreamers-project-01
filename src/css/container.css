@@ -1,12 +1,12 @@
-/* 📌 Mobile devices (320-374px) */
+/* Mobile devices (320-374px) */
 .container {
   min-width: 320px;
-  max-width: 375px;
+  max-width: 374px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* 📌 Small tablets & large phones (375-767px) */
+/* Small tablets & large phones (375-767px) */
 @media only screen and (min-width: 375px) {
   .container {
     max-width: 767px;
@@ -14,7 +14,7 @@
   }
 }
 
-/* 📌 Tablets (768-1279px) */
+/* Tablets (768-1279px) */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 1279px;
@@ -22,7 +22,7 @@
   }
 }
 
-/* 📌 Desktop (1280px+) */
+/* Desktop (1280px+) */
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
