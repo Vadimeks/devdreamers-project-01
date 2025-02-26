@@ -7,7 +7,7 @@
 .reviews-title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 1.08;
   letter-spacing: -0.01em;
   color: #141414;
@@ -73,9 +73,22 @@
   color: #858585;
   max-width: 288px;
 }
-
+/* Mobile (375) */
+@media only screen and (min-width: 375px) {
+  .container.reviews-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  reviews-title {
+    font-size: 48px;
+  }
+}
 /* Tablet (768px) */
 @media only screen and (min-width: 768px) {
+  .container.reviews-container {
+    width: 100%;
+    padding: 0 32px;
+  }
   .reviews-title {
     font-size: 64px;
     line-height: 1;
@@ -108,6 +121,10 @@
 
 /* Desktop */
 @media only screen and (min-width: 1280px) {
+  .container.reviews-container {
+    width: 100%;
+    padding: 0 32px;
+  }
   .reviews-item {
     display: block; /* Показываем все элементы с классом .reviews-item */
   }
