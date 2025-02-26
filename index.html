@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/devdreamers-project-01/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-CFzgHw9K.css">
+  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-CFyuzk32.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
   <div class="container header-container">
     <nav class="header-nav">
       <a class="header-logo" href="/index.html">
-        <svg class="hed-logo-icon">
+        <svg class="hed-logo-icon" aria-hidden="true">
           <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-logo"></use>
         </svg>
       </a>
@@ -37,10 +37,10 @@
           <a class="nav-link" href="#reviews">Reviews</a>
         </li>
       </ul>
-      <button class="header-btn" type="button" data-modal-open>Shop now</button>
+      <button class="header-btn" type="button" data-modal-open aria-label="Open shop modal">Shop now</button>
     </nav>
-    <button class="burger-btn" type="button" data-menu-open>
-      <svg class="burger-icon">
+    <button class="burger-btn" type="button" data-menu-open aria-label="Open mobile menu">
+      <svg class="burger-icon" aria-hidden="true">
         <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-burger"></use>
       </svg>
     </button>
@@ -56,19 +56,22 @@
     <nav class="menu-nav">
       <ul class="btn-list">
         <li>
-          <button type="button" class="btn-list-item list-info-btn">
+          <button  class="btn-list-item list-info-btn" type="button" onclick="location.href='#how-it-works'">How It Works</button>
+          <!-- <button type="button" class="btn-list-item list-info-btn">
             <a href="#how-it-works">How It Works</a>
-          </button>
+          </button> -->
         </li>
         <li>
-          <button type="button" class="btn-list-item">
+          <button class="btn-list-item" type="button" onclick="location.href='#vegetables'">Vegetables</button>
+          <!-- <button type="button" class="btn-list-item">
             <a href="#vegetables">Vegetables</a>
-          </button>
+          </button> -->
         </li>
         <li>
-          <button type="button" class="btn-list-item">
+          <button class="btn-list-item" type="button" onclick="location.href='#reviews'">Reviews</button>
+          <!-- <button type="button" class="btn-list-item">
             <a href="#reviews">Reviews</a>
-          </button>
+          </button> -->
         </li>
       </ul>
     </nav>
@@ -112,7 +115,6 @@
       </form>
     </div>
   </div>
-  
 </header>
 
   
