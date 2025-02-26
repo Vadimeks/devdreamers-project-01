@@ -1,6 +1,5 @@
 .backdrop {
-
-  background-color: #576f35;
+  background-color: rgba(87, 111, 53, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -9,8 +8,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 0.4),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop.is-open {
@@ -20,7 +19,8 @@
 }
 
 .backdrop:not(.is-open) .modal-menu {
-  transform: translate(-50%, -50%) scale(1/5);
+  transform: translate(-50%, -50%) scale(0.2);
+  opacity: 0;
 }
 
 .modal-menu {
@@ -29,20 +29,36 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 335px;
   min-height: 552px;
   border-radius: 40px;
-  background-color: #fcfcfc;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
   .modal-menu {
-    width: 524px;
-    height: 592px;
-    padding: 52px 48px;
+    width: 640px;
+    height: 632px;
+    padding: 72px 100px;
+  }
+
+  .modal {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .modal-menu {
+
+    width: 640px;
+    height: 632px;
+    padding: 72px 100px;
+
   }
 }
 
@@ -54,7 +70,7 @@
   }
 }
 
-.clouse {
+.close {
   background-color: #576f35;
   border: none;
   border-radius: 50px;
@@ -70,8 +86,13 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .clouse:hover,
 .clouse:focus {
   border: none;
   background-color: #7A3145;
+}
+
+.modal {
+  margin-bottom: 20px;
 }
