@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 900; /* Ніжэй, чым хедэр */
+  z-index: 950; /* Ніжэй, чым хедэр */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -23,7 +23,7 @@
   flex-direction: column;
   padding-bottom: 52px;
   min-height: 380px;
-  z-index: 950; /* Ніжэй за хедэр, але вышэй за backdrop */
+  z-index: 900; 
 }
 
 .is-open {
