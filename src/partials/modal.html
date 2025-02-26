@@ -1,7 +1,7 @@
 <div class="backdrop" data-modal>
     <div class="modal-menu">
         <button class="close" type="button" data-modal-close>
-            <svg class="icon-close" width="16" height="16">
+            <svg class="icon-close" width="24" height="24"> 
                 <use href="./img/sprite.svg#icon-close"></use>
             </svg>
         </button>
@@ -12,10 +12,12 @@
 
         <form class="form-modal">
             <div class="modal">
+
                 <input class="form-input" name="user-name" type="text" id="user-name" placeholder="Full Name" />
                 <input class="form-input input-email" type="email" name="email" placeholder="Email"
                     pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
                 <textarea name="form-textarea" class="form-textarea" id="user-comment" placeholder="Comment"></textarea>
+
             </div>
 
             <button class="form-btn send" type="submit" disabled>Send</button>
