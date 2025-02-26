@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/devdreamers-project-01/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-DbFDa1I4.css">
+  <link rel="stylesheet" crossorigin href="/devdreamers-project-01/assets/index-CFzgHw9K.css">
 </head>
 
 <body>
@@ -78,38 +78,40 @@
 </div>
   <div class="backdrop" data-modal>
     <div class="modal-menu">
-        <button class="close" type="button" data-modal-close>
-            <svg class="icon-close" width="24" height="24"> 
-                <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close"></use>
-            </svg>
-        </button>
-
-        <p class="order-form-title">Ordering <span class="form-part">from us</span> is quick and easy! Fill out 
-            <span class="form-sub">the form</span> below and we will contact you!
-        </p>
-
-        <form class="form-modal">
-            <div class="modal">
-                <input class="input form-input" name="user-name" type="text" id="user-name" 
-                       placeholder="Full Name" />
-
-                <input class="input form-input input-email" type="email" name="email" 
-                    pattern="([A-z0-9_.-]+)@([A-z0-9_.-]+)\.([A-z]{2,8})" 
-                    placeholder="Email" required />
-
-                <textarea name="form-textarea" class="input form-textarea" 
-                          id="user-comment" placeholder="Comment"></textarea>
-            </div>
-
-            <button class="form-btn send" type="submit" disabled>Send</button>
-        </form>
+      <button class="close" type="button" data-modal-close>
+        <svg class="icon-close" width="16" height="16">
+          <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal-menu">
+          <button class="close" type="button" data-modal-close>
+              <svg class="icon-close" width="24" height="24">
+                  <use href="/devdreamers-project-01/assets/sprite-CNSiiC1h.svg#icon-close"></use>
+              </svg>
+          </button>
+      <p class="order-form-title">
+        Ordering <span class="form-part">from us</span> is quick and easy! Fill
+        out <span class="form-sub">the form</span> below and we will contact you!
+      </p>
+      
+          <form class="form-modal">
+              <div class="modal">
+                  <input class="input form-input" name="user-name" type="text" id="user-name"
+                         placeholder="Full Name" />
+                  <input class="input form-input input-email" type="email" name="email"
+                      pattern="([A-z0-9_.-]+)@([A-z0-9_.-]+)\.([A-z]{2,8})"
+                      placeholder="Email" required />
+          <textarea
+            name="form-textarea"
+            class="modal-textarea"
+            id="user-comment"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+        <button class="modal-form-btn" type="submit" disabled>Send</button>
+      </form>
     </div>
-</div>
-
-
-
-
-
+  </div>
   
 </header>
 
