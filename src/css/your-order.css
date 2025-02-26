@@ -37,14 +37,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .order-form {
     border-radius: 30px;
     padding: 40px 20px;
     width: 335px;
-    background: #fbfbfb;
-    margin-bottom: 20px;
+    background-color: #fbfbfb;
 }
 
 .order-form-title {
@@ -70,23 +70,27 @@
     border-radius: 30px;
     width: 295px;
     height: 48px;
-    padding: 14px 16px;
+    padding: 14px 13px;
     margin-bottom: 16px;
     outline: none;
 }
+
 
 .form-input::placeholder {
     font-family: inherit;
     color: #141414;
 }
 
+
 .form-input:focus {
     border-color: #7a3145;
 }
 
+
 .input-email:not(:placeholder-shown):invalid {
     border-color: #e74a3b;
 }
+
 
 .input-email:not(:placeholder-shown):valid {
     border-color: #3cbc81;
@@ -192,6 +196,11 @@
     content: '';
 }
 
+.socmedia-link:hover {
+    background-color: #fbfbfb;
+    color: #7a3145;
+}
+
 @media only screen and (min-width: 768px){
     .section-order {
         padding-top: 100px;
@@ -217,11 +226,13 @@
         align-items: center;
         flex-direction: column;
     }
+    .order-form-field {
+        margin-bottom: 32px;
+    }
     .order-form {
         width: 640px;
         height: 632px;
         padding: 72px 100px;
-        margin-bottom: 32px;
     }
     .order-form-title {
         font-size: 32px;
@@ -292,11 +303,23 @@
         background-color: #d4bfc4;
         color: #7a3145;
     }
+    .form-btn:focus {
+        background-color: #fbfbfb;
+        color: #7a3145;
+    }
     .order-img-soc {
         width: 524px;
         padding: 52px 48px;
     }
     .order-image {
         margin-bottom: 80px;
+    }
+    .socmedia-link:hover {
+        background-color: #d4bfc4;
+        color: #7a3145;
+    }
+    .socmedia-link:focus {
+        background-color: #fbfbfb;
+        color: #7a3145;
     }
 }
