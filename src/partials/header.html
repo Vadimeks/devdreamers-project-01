@@ -1,8 +1,10 @@
 <header class="header-section">
   <div class="container header-container">
     <nav class="header-nav">
+
       <a class="header-logo" href="https://vadimeks.github.io/devdreamers-project-01">
         <svg class="hed-logo-icon">
+
           <use href="/img/sprite.svg#icon-logo"></use>
         </svg>
       </a>
@@ -17,15 +19,14 @@
           <a class="nav-link" href="#reviews">Reviews</a>
         </li>
       </ul>
-      <button class="header-btn" type="button" data-modal-open>Shop now</button>
+      <button class="header-btn" type="button" data-modal-open aria-label="Open shop modal">Shop now</button>
     </nav>
-    <button class="burger-btn" type="button" data-menu-open>
-      <svg class="burger-icon">
+    <button class="burger-btn" type="button" data-menu-open aria-label="Open mobile menu">
+      <svg class="burger-icon" aria-hidden="true">
         <use href="/img/sprite.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
   <load src="/partials/mobile-menu.html" />
   <load src="/partials/modal.html" />
-  
 </header>
