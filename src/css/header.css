@@ -57,8 +57,9 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .header-logo {
-    margin-right: 448px;
+  .header-container {
+    width: 768px;
+    padding: 0 32px;
   }
   .hed-logo-icon {
     width: 216px;
@@ -70,6 +71,10 @@
   }
 }
 @media only screen and (min-width: 1280px) {
+  .header-container {
+    width: 1280px;
+    padding: 0 100px;
+  }
   .burger-btn {
     display: none;
   }
