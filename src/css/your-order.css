@@ -1,25 +1,27 @@
+/*Your-order section*/
 .section-order {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 0;
+    margin: 0 auto;
+    width: 100%;
     }
-
 .order-page {
     margin-bottom: 40px;
+    max-width: 320px; 
 } 
-
 .order-title {
-    font-size: 48px;
     line-height: 1.08;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #fbfbfb;
     margin-bottom: 20px;
-}
+    font-size: 38px;
+    max-width: 288px;
+    padding: 0 16px;}
 
 .order-part {
     color: #d4bfc4;
@@ -30,68 +32,58 @@
     font-size: 14px;
     line-height: 1.4;
     color: #dedede;
+    max-width: 288px;
+    padding: 0 16px;
 }
-
 .order-form-field {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-}
-
+    width: 288px;
+    }
 .order-form {
     border-radius: 30px;
     padding: 40px 20px;
-    width: 335px;
+    width: 288px;
     background-color: #fbfbfb;
+    margin: 0 auto;
 }
-
 .order-form-title {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 1;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
-
 .form-part {
     color: #7a3145;
 }
-
 .form-sub {
     color: #576f35;
 }
-
 .form-input {
     font-size: 14px;
     line-height: 1.4;
     border: 1px solid #858585;
     border-radius: 30px;
-    width: 295px;
+    width: 240px;
     height: 48px;
     padding: 14px 13px;
     margin-bottom: 16px;
     outline: none;
 }
-
-
 .form-input::placeholder {
     font-family: inherit;
     color: #141414;
 }
-
-
 .form-input:focus {
     border-color: #7a3145;
 }
-
-
 .input-email:not(:placeholder-shown):invalid {
     border-color: #e74a3b;
 }
-
-
 .input-email:not(:placeholder-shown):valid {
     border-color: #3cbc81;
 }
@@ -102,7 +94,7 @@
     line-height: 1.42;
     border: 1px solid #858585;
     border-radius: 15px;
-    width: 295px;
+    width: 240px;
     height: 92px;
     padding: 16px 14px;
     margin-bottom: 20px;
@@ -126,8 +118,8 @@
     font-family: inherit;
     background: #7a3145;
     border-radius: 30px;
-    padding: 16px 123px;
-    min-width: 295px;
+    width: 240px;
+    padding: 16px 100px;
     height: 52px;
     font-weight: 600;
     font-size: 18px;
@@ -150,6 +142,7 @@
     padding: 40px 20px;
     background: #7a3145;
     border-radius: 30px;
+    width: 288px;
 }
 
 .order-image {
@@ -200,25 +193,83 @@
     background-color: #fbfbfb;
     color: #7a3145;
 }
-
+@media only screen and (min-width: 375px) {
+    .order-page {
+        width: 335px;
+    } 
+        .order-title {
+            font-size: 48px; 
+            max-width: 335px;
+            padding: 0;
+        }
+        .order-text {
+            max-width: 335px;
+            padding: 0;
+        }
+         .order-form-field {
+            width: 335px;
+                } 
+        .order-form {
+            width: 335px;
+                }
+        .order-form-title {
+            font-size: 28px;
+        } 
+        .form-input,  .form-textarea {
+            width: 295px;   
+        } 
+        .form-btn {
+            padding: 16px 123px;
+        min-width: 295px;} 
+        .order-title {
+            font-size: 48px;
+        width: 335px;
+        } 
+        .order-form {
+            width: 335px;
+        }
+        .order-form-title {
+            font-size: 28px;
+        }
+        .form-input {
+            width: 295px;
+            height: 48px;   
+        }
+        .form-textarea {
+            width: 295px;
+        }
+        .form-btn {
+            padding: 16px 123px;
+            width: 295px;
+        }
+        .order-img-soc {
+            width: 335px;
+        }
+    }
 @media only screen and (min-width: 768px){
+    
+    .container .section-order {
+        max-width: 768px; 
+    }
     .section-order {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 100px 0;
     }
     .order-page {
         margin-bottom: 52px;
+        max-width: 640px;
     }
     .order-title {
         font-weight: 600;
         font-size: 64px;
         line-height: 1;
         margin-bottom: 24px;
+        min-width: 640px;
     }
     .order-text {
         font-size: 16px;
         line-height: 1.25;
         color: #fbfbfb;
+        min-width: 640px;
     }
     .order-form-socmedia {
         display: flex;
@@ -228,6 +279,7 @@
     }
     .order-form-field {
         margin-bottom: 32px;
+        width: 640px;
     }
     .order-form {
         width: 640px;
@@ -276,11 +328,26 @@
 }
 
 @media only screen and (min-width: 1280px) {
+    .container.section-order {
+        padding: 0;
+    }
+    .section-order {
+        padding: 100px 0px;
+    }
     .order-page {
         text-align: left;
-        width: 751px;
+        width: 1080px;
+        
+    }
+    .order-form-field {
+        width: 524px;
+        margin-bottom: 0;
+    }
+    .order-img-soc {
+    width: 524px;
     }
     .order-form-socmedia {
+        display: flex;
         flex-direction: row;
         gap: 32px;
     }
@@ -289,6 +356,7 @@
         height: 592px;
         padding: 52px 48px;
         margin-bottom: 0;
+        
     }
     .form-input {
         width: 428px;
