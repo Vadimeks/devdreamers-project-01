@@ -55,7 +55,7 @@
 
 .title-customer {
   margin-bottom: 8px;
-  text-align: center; /* Для текста внутри <h3> */
+  text-align: center; /* Для текста внутри h3 */
   font-weight: 600;
   font-size: 18px;
   line-height: 111%;
