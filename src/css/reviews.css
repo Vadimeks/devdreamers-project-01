@@ -1,5 +1,5 @@
 .section-reviews {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #fbfbfb;
   padding: 80px 0;
   width: 100%;
 }
@@ -34,7 +34,7 @@
 }
 
 .reviews-item {
-  width: 100%;
+  /* width: 100%; */
   max-width: 320px;
   border-radius: 24px;
   padding: 20px 16px;
@@ -92,7 +92,9 @@
 @media only screen and (min-width: 768px) {
   .container.reviews-container {
     width: 100%;
-    padding: 0 32px;
+    max-width: 768px;
+    padding: 100px 32px;
+    margin: 0 auto;
   }
   .reviews-list {
     gap: 24px;
@@ -112,10 +114,6 @@
     margin-bottom: 52px;
   }
 
-  .reviews-list {
-    justify-content: space-between;
-  }
-
   .reviews-item:nth-child(1),
   .reviews-item:nth-child(2) {
     display: block; /* Показываем первые два пункта */
@@ -131,28 +129,29 @@
   }
 }
 
-/* Desktop */
+
+/* Desktop (1280px) */
 @media only screen and (min-width: 1280px) {
-  .container.reviews-container {
-    width: 100%;
-    padding: 0 32px;
+  .section-reviews {
+    padding: 0;
   }
-  .reviews-item {
-    display: block; /* Показываем все элементы с классом .reviews-item */
+  .container.reviews-container {
+    max-width: 1280px;
     width: 100%;
+    padding: 80px 100px;
+    margin: 0 auto;
+  }
+  .reviews-list {
+    max-width: 1080px;
+    /* display: flex;
+    justify-content: space-between; */
+    gap: 24px;
+    flex-wrap: nowrap; /* Без переноса */
   }
   .reviews-item:nth-child(n + 2) {
-    display: block; /* Переопределяем правило скрытия для элементов с 2-го и далее */
+    display: block;
   }
   .reviews-item:nth-child(n + 3) {
-    display: block; /* Переопределяем правило скрытия для элементов с 3-го и далее */
-  }
-
-  .reviews-list {
-    gap: 24px;
-    max-width: 1080px; /* Фиксируем ширину элемента */
-
-    justify-content: space-between;
-
+    display: block; /*Переопределяем правило скрытия для элементов с 3-го и далее*/
   }
 }
