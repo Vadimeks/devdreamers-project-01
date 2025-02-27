@@ -21,6 +21,7 @@
   font-size: 14px;
   line-height: 1.42857;
   color: #fbfbfb;
+  width: 288px;
 }
 
 .nav-wrapper {
@@ -162,6 +163,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: #fbfbfb;
+    width: 265px;
   }
 
   .footer-privacy-link {
