@@ -1,23 +1,25 @@
  /* Vegetables */
  .section-vegetables {
-   background-color: #7a3145;
-   padding: 80px 0;
- }
-
+  background-color: #7a3145;
+  width: 100%;
+ }  
+.vegetables-container {
+  max-width: 320px;
+  padding: 80px 20px;
+  margin: 0 auto;
+}
  .vegetables-title {
    color: #fbfbfb;
    font-weight: 800;
-   font-size: 48px;
+      font-size: 42px; 
    line-height: 1.08;
    letter-spacing: -0.01em;
    text-transform: uppercase;
    margin-bottom: 20px;
  }
-
  .veg-title-span {
    color: #d4bfc4;
  }
-
  .vegetables-text-info {
    font-weight: 500;
    font-size: 14px;
@@ -25,7 +27,52 @@
    color: #fbfbfb;
    margin-bottom: 40px;
  }
-
+ .vegetabels-list {
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.vegetabels-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 40px;
+  padding: 0;
+  height: 376px;
+  background-color: transparent;
+  width: 288px;
+}
+.vegetabels-cart {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 40px;
+  background-color: #fff;
+}
+.card-front {
+  padding: 32px 24px;
+}
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #576F35;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
  .vagetabels-subtitle {
    margin-bottom: 12px;
    font-weight: 800;
@@ -35,7 +82,6 @@
    text-transform: uppercase;
    color: #7a3145;
  }
-
  .vagetabels-text {
    font-weight: 500;
    margin-bottom: 12px;
@@ -43,146 +89,113 @@
    line-height: 1.43;
    color: #141414;
  }
-
- .vegetabels-cart {
-   perspective: 1000px;
-   width: 100%;
-   height: 100%;
- }
-
- .card-inner {
-   position: relative;
-   width: 100%;
-   height: 100%;
-   transition: transform 0.6s;
-   transform-style: preserve-3d;
- }
-
- .card-front,
- .card-back {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   backface-visibility: hidden;
-   border-radius: 40px;
-   background-color: #fff;
- }
-
- .card-front {
-   padding: 32px 24px;
- }
-
- .card-back {
-   transform: rotateY(180deg);
-   background-color: #576F35;
-   padding: 32px 24px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-
+ .vegetables-img {
+  margin: 0 auto;
+}
  .vegetabels-item:hover .card-inner {
    transform: rotateY(180deg);
  }
-
  .vagetabels-cover-text {
    color: #fff;
    font-weight: 500;
    font-size: 16px;
    text-align: center;
  }
-
-    .vegetabels-list {
-      display: grid;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-    }
+ @media screen and (min-width: 375px) {
   
-    .vegetabels-item {
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      border-radius: 40px;
-      padding: 0;
-      height: 376px;
-      background-color: transparent;
+    .vegetabels-list {
+      grid-template-columns: 335px;
+    }
+    .vegetables-container {
+      max-width: 375px;
+    }
+  .vegetables-title {
+   font-size: 48px; 
+  }
+  .vegetabels-item {
       width: 335px;
     }
- .vegetables-img {
-   margin: 0 auto;
- }
- @media screen and (max-width: 374px) {
-   .section-advertisement {
-     padding: 10px 0;
-   }
-    .vegetabels-list {
-      grid-template-columns: 290px;
-    }
-  
     .vegetabels-item {
-      width: 290px;
+      height: 376px;
+      width: 335px;
     }
   
-    .card-front {
-      padding: 20px;
-    }
 
  }
- @media screen and (max-width: 767px) {
-   .vegetabels-list {
-     justify-content: center;
-   }
- }
+ 
  @media screen and (min-width: 768px) {
+  .section-vegetables {
+    padding: 100px 32px;
+  }
+  .vegetables-container {
+    max-width: 768px;
+  }
    .vegetables-title {
-     max-width: 508px;
+     width: 508px;
     font-size: 64px;
    }
-
    .vegetables-text-info {
-     max-width: 626px;
+     width: 626px;
     font-size: 16px;
+    margin-bottom: 52px;
    }
-
   .vagetabels-text {
       font-size: 16px;
       line-height: 1.25;
     }
-
+    .vegetables-item {
+      height: 380px;
+    }
   .vagetabels-subtitle {
      font-size: 32px;
   }
-  
-   .section-vegetables {
-     padding: 100px 0;
-   }
-
-   .vegetables-text-info {
-     margin-bottom: 52px;
-   }
-
-    .vegetabels-list {
+  .vegetabels-list {
       grid-template-columns: repeat(2, 340px);
       gap: 28px 24px;
       justify-content: center;
       padding: 0 12px;
     }
-  
-    .vegetables-item {
-      height: 380px;
-    }
-
-   .card-front {
+ .card-front {
      padding: 32px 30px;
    }
  }
 
  @media screen and (min-width: 1280px) {
-  .vegetabels-list {
-      grid-template-columns: repeat(3, 340px);
-      gap: 28px 24px;
-      justify-content: center;
-    }
-   .card-front {
-     padding: 32px 32px;
+  .section-vegetables {
+    padding: 100px;
+  }
+  .vegetables-container {
+    max-width: 1280px;
+    padding: 0;
+  }
+   .vegetables-title {
+     width: 508px;
+    font-size: 64px;
    }
- } 
+   .vegetables-text-info {
+     width: 626px;
+    font-size: 16px;
+    margin-bottom: 52px;
+   }
+  .vagetabels-text {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    .vegetables-item {
+      height: 380px;
+    }
+  .vagetabels-subtitle {
+     font-size: 32px;
+  }
+    .vegetabels-list {
+    grid-template-columns: repeat(3, 340px);
+    gap: 28px 24px;
+    justify-content: center;
+  }
+ .card-front {
+   padding: 32px 32px;
+ }
+ }
+ 
+
+ 

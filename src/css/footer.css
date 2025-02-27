@@ -232,8 +232,9 @@
 
   .footer-privacy-wrapper {
     margin-top: 124px;
+    max-width: 1080px;
   }
-
+  
     .footer-logo:hover,
     .footer-nav-link:hover,
     .address-list-link:hover,

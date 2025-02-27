@@ -3,7 +3,12 @@
   padding: 80px 0;
   width: 100%;
 }
-
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .reviews-title {
   text-transform: uppercase;
   font-weight: 600;
@@ -12,6 +17,7 @@
   letter-spacing: -0.01em;
   color: #141414;
   margin-bottom: 20px;
+  width: 288px;
 }
 .reviews-accent {
   color: #576f35;
@@ -23,7 +29,7 @@
   color: #141414;
   margin-bottom: 40px;
   text-align: left;
-  width: 100%;
+  width: 288px;
 }
 
 .reviews-list {
@@ -31,11 +37,11 @@
   justify-content: space-between; /* Можно оставить для распределения */
   flex-wrap: wrap;
   gap: 24px; /* Отступы между элементами */
+  padding: 0;
 }
 
 .reviews-item {
-  /* width: 100%; */
-  max-width: 320px;
+  max-width: 288px;
   border-radius: 24px;
   padding: 20px 16px;
   text-align: center;
@@ -77,15 +83,19 @@
 /* Mobile (375) */
 @media only screen and (min-width: 375px) {
   .container.reviews-container {
-    width: 100%;
+    width: 375px;
     padding: 0 20px;
+    
   }
   .reviews-title {
     font-size: 48px;
+    width: 335px;
   }
-  .reviews-item {
-    width: 100%;
+  .reviews-text {
+    width: 335px;
   }
+ 
+  
 }
 
 /* Tablet (768px) */
