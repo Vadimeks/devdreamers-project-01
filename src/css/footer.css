@@ -213,7 +213,10 @@
     padding-top: 52px;
     padding-bottom: 52px;
   }
-
+  .footer-container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
   .footer-logo-contact-wrapper {
     gap: 250px;
   }
