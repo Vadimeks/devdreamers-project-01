@@ -7,7 +7,7 @@
 .reviews-title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 1.08;
   letter-spacing: -0.01em;
   color: #141414;
@@ -34,7 +34,7 @@
 
 .reviews-item {
   width: 100%;
-  max-width: 335px;
+  max-width: 320px;
   border-radius: 24px;
   padding: 20px 16px;
   text-align: center;
@@ -73,6 +73,7 @@
   color: #858585;
   max-width: 288px;
 }
+
 /* Mobile (375) */
 @media only screen and (min-width: 375px) {
   .container.reviews-container {
@@ -82,7 +83,12 @@
   reviews-title {
     font-size: 48px;
   }
+  .reviews-item {
+    width: 100%;
+    /* max-width: 335px; */
+  }
 }
+
 /* Tablet (768px) */
 @media only screen and (min-width: 768px) {
   .container.reviews-container {
@@ -94,6 +100,11 @@
     line-height: 1;
     margin-bottom: 24px;
     width: 553px;
+  }
+
+  .reviews-item {
+    width: 100%;
+    gap: 24px;
   }
 
   .reviews-text {
@@ -127,6 +138,7 @@
   }
   .reviews-item {
     display: block; /* Показываем все элементы с классом .reviews-item */
+    width: 100%;
   }
   .reviews-item:nth-child(n + 2) {
     display: block; /* Переопределяем правило скрытия для элементов с 2-го и далее */
