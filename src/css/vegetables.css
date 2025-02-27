@@ -129,7 +129,6 @@
  }
  @media screen and (max-width: 767px) {
    .vegetabels-list {
-     grid-template-columns: 335px;
      justify-content: center;
    }
  }
