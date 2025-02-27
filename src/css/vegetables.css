@@ -1,3 +1,4 @@
+ /* Vegetables */
  .section-vegetables {
    background-color: #7a3145;
    padding: 80px 0;
@@ -107,12 +108,25 @@
    background-color: transparent;
  }
  .vegetables-img {
-   max-width: 100%;
-   max-height: 100%;
-   height: auto;
-   object-fit: cover;
+   margin: 0 auto;
  }
- 
+ @media screen and (max-width: 374px) {
+   .section-advertisement {
+     padding: 10px 0;
+   }
+     .card-front {
+      padding: 20px;
+     }
+     .vegetabels-list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+     }
+     
+
+ }
  @media screen and (min-width: 768px) {
    .vegetables-title {
      max-width: 508px;
@@ -160,10 +174,6 @@
    .vegetables-list {
      grid-template-columns: repeat(auto-fit, minmax(344px, calc((100% - 48px) / 3)));
      gap: 28px 24px;
-   }
-
-   .vegetables-item {
-     height: 380px;
    }
 
    .card-front {
