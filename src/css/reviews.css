@@ -112,6 +112,12 @@
     margin-bottom: 52px;
   }
 
+
+
+  .reviews-list {
+   justify-content: space-between; 
+   }
+
   .reviews-item:nth-child(1),
   .reviews-item:nth-child(2) {
     display: block; /* Показываем первые два пункта */
@@ -143,7 +149,9 @@
   .reviews-item:nth-child(n + 3) {
     display: block; /* Переопределяем правило скрытия для элементов с 3-го и далее */
   }
-  .reviews-item {
-    gap: 24px;
+
+  .reviews-list {
+    justify-content: space-between;
+
   }
 }

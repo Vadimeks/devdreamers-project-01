@@ -1,30 +1,40 @@
-/* 📌 Mobile devices (320-374px) */
+header,
+footer,
+section {
+ margin: 0;
+ padding: 0;
+   overflow: hidden;
+}
+/* Mobile devices (320-374px) */
 .container {
-  min-width: 320px;
-  max-width: 375px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
+  width: 320px;
+  max-width: 374px;
 }
 
-/* 📌 Small tablets & large phones (375-767px) */
+/* Small tablets & large phones (375-767px) */
 @media only screen and (min-width: 375px) {
   .container {
+    width: 375px;
     max-width: 767px;
-    padding: 0 24px;
+    padding: 0 20px;
   }
 }
 
-/* 📌 Tablets (768-1279px) */
+/* Tablets (768-1279px) */
 @media only screen and (min-width: 768px) {
   .container {
+    width: 768px;
     max-width: 1279px;
     padding: 0 32px;
   }
 }
 
-/* 📌 Desktop (1280px+) */
+/* Desktop (1280px+) */
 @media only screen and (min-width: 1280px) {
   .container {
+    width: 1208px;
     max-width: 1280px;
     padding: 0 100px;
   }
