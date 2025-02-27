@@ -7,14 +7,18 @@ section {
 }
 /* Mobile devices (320-374px) */
 .container {
-  margin: 0 auto;
-  padding: 0 16px;
-  min-width: 320px;
-  max-width: 374px;
+  margin: 0 auto;}
+
+  @media only screen and (min-width: 320px){
+    .container {
+      min-width: 320px;
+      max-width: 374px;
+      padding: 0 16px;
+    }
 }
 
 /* Small tablets & large phones (375-767px) */
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .container {
     max-width: 767px;
     padding: 0 20px;
@@ -22,7 +26,7 @@ section {
 }
 
 /* Tablets (768-1279px) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
   .container {
     max-width: 1279px;
     padding: 0 32px;

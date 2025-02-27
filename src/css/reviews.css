@@ -151,5 +151,8 @@
   .reviews-list {
     gap: 24px;
     max-width: 1080px; /* Фиксируем ширину элемента */
+
+    justify-content: space-between;
+
   }
 }
