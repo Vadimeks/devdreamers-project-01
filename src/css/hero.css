@@ -59,7 +59,7 @@
 
 @media only screen and (min-width: 320px) {
   .hero-image {
-    width: 320px;
+    min-width: 320px;
     height: 256px;
   }
   .hero-title {
@@ -71,7 +71,20 @@
     width: 320px;
   }
 }
-
+@media only screen and (min-width: 375px) {
+  .hero-image {
+    width: 375px;
+    height: 256px;
+  }
+  .hero-title {
+    font-size: 46px;
+  }
+  .hero-text {
+    padding: 100px 16px 0 16px;
+    margin-bottom: 40px;
+    width: 375px;
+  }
+}
 /* ---- HERO FOR TABLETS ----*/
 
 @media only screen and (min-width: 768px) {
@@ -109,9 +122,16 @@
 /* ---- HERO FOR PC's ---- */
 @media only screen and (min-width: 1280px) {
   .hero-container {
-    padding-left: 100px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+   padding-left: 100px;
     margin: auto;
     flex-direction: row;
+    gap: 38px;
   }
 
   .section-hero {
@@ -119,8 +139,12 @@
   }
 
   .hero-text {
-    padding: 232px 36px 0px 0px;
-    margin-bottom: 0px;
+    padding: 232px 0px 0px 0px;
+    margin-bottom: 40px;
+    width: 504px;
+display: flex;
+flex-direction: column;
+justify-content: left;
   }
 
   .hero-title {
@@ -134,7 +158,7 @@
   .hero-descr {
     font-size: 16px;
     line-height: 1.25;
-    width: 472px;
+    width: 504px;
   }
 
   .hero-image {
