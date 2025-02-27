@@ -126,10 +126,11 @@
  
  @media screen and (min-width: 768px) {
   .section-vegetables {
-    padding: 100px 32px;
+    
   }
   .vegetables-container {
     max-width: 768px;
+    padding: 100px 32px;
   }
    .vegetables-title {
      width: 508px;
@@ -163,11 +164,11 @@
 
  @media screen and (min-width: 1280px) {
   .section-vegetables {
-    padding: 100px;
+    
   }
   .vegetables-container {
     max-width: 1280px;
-    padding: 0;
+    padding: 100px;
   }
    .vegetables-title {
      width: 508px;
