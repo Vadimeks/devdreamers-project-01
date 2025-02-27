@@ -2,13 +2,18 @@
   position: relative;
   background-color: #576f35;
   margin: 0 auto;
-  max-width: 767px;
+  width: 100%;
+  padding: 0;
 }
 
 .hero-container {
   padding: 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-title {
@@ -40,7 +45,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   width: 375px;
 
 }
@@ -54,21 +58,29 @@
 /* ---- HERO FOR SMALL PHONES ---- */
 
 @media only screen and (min-width: 320px) {
-
+  .hero-image {
+    width: 320px;
+    height: 256px;
+  }
+  .hero-title {
+    font-size: 46px;
+  }
+  .hero-text {
+    padding: 100px 16px 0 16px;
+    margin-bottom: 40px;
+    width: 320px;
+  }
 }
 
 /* ---- HERO FOR TABLETS ----*/
 
 @media only screen and (min-width: 768px) {
+  
   .hero-text {
+    width: 768px;
     padding-top: 120px;
     margin-bottom: 52px;
   }
-
-  .section-hero {
-    max-width: 1279px;
-  }
-
   .hero-title {
     font-size: 76px;
     margin-bottom: 24px;
