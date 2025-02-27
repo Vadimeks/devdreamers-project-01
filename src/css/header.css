@@ -50,6 +50,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 448px;
+  }
   .hed-logo-icon {
     width: 216px;
     height: 20px;
@@ -57,7 +60,6 @@
   .burger-icon {
     width: 40px;
     height: 40px;
-    margin-left: 448px;
   }
 }
 
@@ -70,7 +72,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  .hed-logo-icon {
+  .header-logo {
     margin-right: 340px;
   }
   .nav-list {
@@ -122,23 +124,20 @@
     background: rgba(87, 111, 53, 0.5);
   }
 }
-.header-logo {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.header-logo:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
-  color: #d4bfc4;
-}
 
 .nav-list .nav-link {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .nav-list .nav-link:hover {
   transform: scale(1.05);
-  color: black;
-  background: rgba(255, 87, 51, 0.4);
-  border: 1px solid black;
+  background-color: #D4BFC4;
+  color: #7A3145;
+  border: none;
+}
+.nav-list .nav-link:focus {
+  background-color: #FBFBFB;
+  color: #7A3145;
+  border: none;
 }
 .header-btn:hover {
   background-color: #D4BFC4;
