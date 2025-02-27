@@ -21,6 +21,7 @@
   font-size: 14px;
   line-height: 1.42857;
   color: #fbfbfb;
+  width: 288px;
 }
 
 .nav-wrapper {
@@ -119,7 +120,8 @@
 .footer-privacy-link:hover {
   transform: scale(1.1); 
   opacity: 0.8; 
-  color: #d4bfc4; 
+  color: #7a3145; 
+  background-color: #fbfbfb;
 }
 
 @media only screen and (min-width: 768px) {
@@ -161,6 +163,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: #fbfbfb;
+    width: 265px;
   }
 
   .footer-privacy-link {
@@ -219,4 +222,20 @@
   .footer-privacy-wrapper {
     margin-top: 124px;
   }
-}
+
+    .footer-logo:hover,
+    .footer-nav-link:hover,
+    .address-list-link:hover,
+    .footer-privacy-link:hover {
+      color: #7a3145;
+      background-color: #d4bfc4;
+    }
+  
+    .footer-logo:focus,
+    .footer-nav-link:focus,
+    .address-list-link:focus,
+    .footer-privacy-link:focus {
+      color: #7a3145;
+      background-color: #fbfbfb;
+ }
+} 

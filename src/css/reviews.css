@@ -143,7 +143,9 @@
   .reviews-item:nth-child(n + 3) {
     display: block; /* Переопределяем правило скрытия для элементов с 3-го и далее */
   }
-  .reviews-item {
-    gap: 24px;
+
+  .reviews-list {
+    justify-content: space-between;
+
   }
 }

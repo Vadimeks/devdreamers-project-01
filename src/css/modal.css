@@ -75,7 +75,7 @@
   text-transform: uppercase;
   color: #FBFBFB;
   border: none;
-  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  /* transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, border-color 0.3s ease-in-out; */
 }
 /* Ховер і фокус */
 .modal-form-btn:hover,
