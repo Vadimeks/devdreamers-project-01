@@ -1,9 +1,10 @@
 .section-reviews {
   background-color: #fbfbfb;
-  padding: 80px 0;
+  padding: 0;
   width: 100%;
 }
 .reviews-container {
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,13 +80,16 @@
   color: #858585;
   max-width: 288px;
 }
-
+.row {
+  width: 288px;
+  margin-bottom: 30px;
+  padding: 0 ;
+ }
 /* Mobile (375) */
 @media only screen and (min-width: 375px) {
   .container.reviews-container {
     width: 375px;
-    padding: 0 20px;
-    
+    padding: 80px 20px;
   }
   .reviews-title {
     font-size: 48px;
@@ -94,8 +98,13 @@
   .reviews-text {
     width: 335px;
   }
- 
-  
+ .row {
+  width: 335px;
+  margin-bottom: 40px;
+  padding-right: 151px ;
+ }
+ .reviews-item {
+  max-width: 335px;}
 }
 
 /* Tablet (768px) */
@@ -108,7 +117,6 @@
   }
   .reviews-list {
     gap: 24px;
-
     max-width: 704px; /* Фиксируем ширину элемента */
   }
   .reviews-title {
@@ -116,12 +124,14 @@
     line-height: 1;
     margin-bottom: 24px;
     width: 553px;
+    
   }
 
   .reviews-text {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 52px;
+    width: 553px;
   }
 
   .reviews-item:nth-child(1),
@@ -137,6 +147,21 @@
     line-height: 1.25;
     max-width: 303px;
   }
+  .reviews-item {
+    max-width: 344px;
+  }
+  .container.reviews-container {
+        display: flex;
+        flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 52px;
+    padding-right: 151px;
+    width: 704px;
+  }
 }
 
 
@@ -146,15 +171,23 @@
     padding: 0;
   }
   .container.reviews-container {
-    max-width: 1280px;
-    width: 100%;
-    padding: 80px 100px;
-    margin: 0 auto;
+    max-width: 1080px;
+        padding: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
   }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 52px;
+    padding-right: 527px;
+    width: 1080px;
+  }
+  
   .reviews-list {
     max-width: 1080px;
-    /* display: flex;
-    justify-content: space-between; */
     gap: 24px;
     flex-wrap: nowrap; /* Без переноса */
   }
@@ -163,5 +196,22 @@
   }
   .reviews-item:nth-child(n + 3) {
     display: block; /*Переопределяем правило скрытия для элементов с 3-го и далее*/
+  }
+  .reviews-title {
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 24px;
+    width: 553px;
+    
+  }
+  .reviews-item {
+    width: 344px;
+  }
+  .reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 52px;
+    width: 553px;
+    
   }
 }
