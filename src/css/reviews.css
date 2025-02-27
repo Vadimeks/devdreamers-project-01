@@ -97,7 +97,9 @@
   }
   .reviews-list {
     gap: 24px;
-    max-width: 704px; /* Фиксируем ширину элемента */
+
+    max-width: 704gpx; /* Фиксируем ширину элемента */
+
   }
   .reviews-title {
     font-size: 64px;
@@ -111,6 +113,14 @@
     line-height: 1.25;
     margin-bottom: 52px;
   }
+
+
+
+
+  .reviews-list {
+   justify-content: space-between; 
+   }
+
 
   .reviews-item:nth-child(1),
   .reviews-item:nth-child(2) {
