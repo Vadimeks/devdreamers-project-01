@@ -62,7 +62,6 @@
   line-height: 111%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  text-align: center;
   color: #141414;
 }
 
@@ -81,7 +80,7 @@
     width: 100%;
     padding: 0 20px;
   }
-  reviews-title {
+  .reviews-title {
     font-size: 48px;
   }
   .reviews-item {
@@ -153,6 +152,11 @@
   .reviews-item:nth-child(n + 3) {
     display: block; /* Переопределяем правило скрытия для элементов с 3-го и далее */
   }
+
+  .reviews-list {
+    gap: 24px;
+    max-width: 1080px; /* Фиксируем ширину элемента */
+
 
   .reviews-list {
     justify-content: space-between;
