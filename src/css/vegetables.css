@@ -5,7 +5,7 @@
  }  
 .vegetables-container {
   max-width: 320px;
-  padding: 80px 20px;
+  padding: 80px 16px;
   margin: 0 auto;
 }
  .vegetables-title {
@@ -108,6 +108,7 @@
     }
     .vegetables-container {
       max-width: 375px;
+      padding: 80px 20px;
     }
   .vegetables-title {
    font-size: 48px; 

@@ -8,7 +8,7 @@
   background-color: #7a3145;
   width: 100%;
   overflow: hidden;
-  padding: 40px 20px;
+  padding: 40px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   background: #576f35;
-  padding: 80px 20px;
+  padding: 80px 16px;
 }
 .content-title {
   max-width: 335px;
@@ -114,7 +114,17 @@
   outline: 5px solid #d4bfc4;
 }
 /* /Order-steps */
-
+@media screen and (min-width: 375px) {
+  .order-section {
+    max-width: 767px;
+  }
+  .image-container {
+    padding: 40px 20px;
+  }
+  .content {
+    padding: 80px 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .order-section {
     max-width: 1279px;
