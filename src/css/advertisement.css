@@ -5,6 +5,7 @@
        background-color: #fbfbfb;
        padding: 0;
        margin: 0 auto;
+       width: 100%;
      }
     
     .advertisement-container {
@@ -58,7 +59,7 @@
        }
   
        .advertisement-container {
-         max-width: 704px;
+         max-width: 1280px;
          margin: 0 auto;
          padding: 0;
        }
@@ -78,17 +79,20 @@
   
      @media screen and (min-width: 1280px) {
        .section-advertisement {
-         padding: 100px 113px;
+        padding: 0;
        }
   
        .advertisement-container {
-        max-width: 1080px;
-        flex-direction: row;
-        display: inline;
-          padding: 0;
-          margin: 0; 
+        padding: 100px 113px;
+        max-width: 1280px;
+                width: 100%;
+          margin: 0 auto; 
        }
-  
+  .adv-content {
+    display: flex;
+    flex-direction: row;
+    display: inline;
+  }
        .advertisement-text {
          font-size: 76px;
          display: inline;
