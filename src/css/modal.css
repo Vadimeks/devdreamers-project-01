@@ -27,7 +27,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 335px;
+  width: 288px;
   min-height: 552px;
   border-radius: 40px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -65,8 +65,8 @@
   font-family: inherit;
   background: #7A3145;
   border-radius: 30px;
-  padding: 16px 123px;
-  min-width: 295px;
+  padding: 16px 48px;
+  width: 248px;
   height: 52px;
   font-weight: 600;
   font-size: 18px;
@@ -113,7 +113,7 @@
   line-height: 1.42;
   border: 1px solid #858585;
   border-radius: 15px;
-  width: 295px;
+  width: 248px;
   height: 96px;
   padding: 16px 14px;
   margin-bottom: 20px;
@@ -126,6 +126,16 @@
 .modal-textarea::placeholder {
   font-family: inherit;
   color: #141414;
+}
+@media only screen and (min-width: 375px) {
+  .modal-menu {
+    width: 335px;
+  }
+  .modal-form-btn {
+    min-width: 295px;
+  }
+  .modal-form-btn {
+       width: 248px;}
 }
 @media only screen and (min-width: 768px){
   .modal-menu {
