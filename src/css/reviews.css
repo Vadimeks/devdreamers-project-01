@@ -7,7 +7,7 @@
 .reviews-title {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 46px;
+  font-size: 48px;
   line-height: 1.08;
   letter-spacing: -0.01em;
   color: #141414;
@@ -102,8 +102,7 @@
     margin-bottom: 52px;
   }
   .reviews-list {
-    /* justify-content: space-between; */
-    justify-content: center;
+    gap: 24px;
   }
   .reviews-item:nth-child(1),
   .reviews-item:nth-child(2) {
@@ -135,7 +134,7 @@
   .reviews-item:nth-child(n + 3) {
     display: block; /* Переопределяем правило скрытия для элементов с 3-го и далее */
   }
-  .reviews-list {
-    justify-content: space-between;
+  .reviews-item {
+    gap: 24px;
   }
 }
