@@ -97,7 +97,7 @@
   }
   .reviews-list {
     gap: 24px;
-    max-width: 704px; /* Фиксируем ширину элемента */
+    max-width: 704gpx; /* Фиксируем ширину элемента */
   }
   .reviews-title {
     font-size: 64px;
