@@ -133,7 +133,7 @@
 /* Desktop */
 @media only screen and (min-width: 1280px) {
   .container.reviews-container {
-    width: 100%;
+git    width: 100%;
     padding: 0 32px;
   }
   .reviews-item {
