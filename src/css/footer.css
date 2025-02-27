@@ -123,12 +123,19 @@
   color: #7a3145; 
   background-color: #fbfbfb;
 }
-
+@media only screen and (min-width: 375px) {
+  .footer-container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .section-footer {
     padding: 32px 0;
   }
-
+.footer-container {
+  max-width: 768px;
+}
   .footer-text-wrapper {
     gap: 24px;
     max-width: 265px;
@@ -156,6 +163,7 @@
     margin-top: 100px;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 704px;
   }
 
   .footer-text {
