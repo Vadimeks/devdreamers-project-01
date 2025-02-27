@@ -55,7 +55,7 @@
 
 .title-customer {
   margin-bottom: 8px;
-  text-align: center; /* Для текста внутри <h3> */
+  text-align: center; /* Для текста внутри h3 */
   font-weight: 600;
   font-size: 18px;
   line-height: 111%;
@@ -134,7 +134,7 @@
 /* Desktop */
 @media only screen and (min-width: 1280px) {
   .container.reviews-container {
-git    width: 100%;
+    width: 100%;
     padding: 0 32px;
   }
   .reviews-item {
