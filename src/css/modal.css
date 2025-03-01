@@ -79,28 +79,28 @@
   background-color: #D4BFC4;
   color: #7A3145;
 }
-input {
+.modal-input {
   font-size: 14px;
   line-height: 1.4;
   border: 1px solid #858585;
   border-radius: 30px;
-  width: 440px;
+  width: 248px;
   height: 52px;
   padding: 14px 16px;
   margin-bottom: 16px;
   outline: none;
 }
-input::placeholder {
+.modal-input::placeholder {
   font-family: inherit;
   color: #141414;
 }
-input:focus {
+.modal-inputinput:focus {
   border-color: #7A3145;
 }
-input:not(:placeholder-shown):invalid {
+.modal-input:not(:placeholder-shown):invalid {
   border-color: #E74A3B;
 }
-input:not(:placeholder-shown):valid {
+.modal-input:not(:placeholder-shown):valid {
   border-color: #3CBC81;
 }
 .modal-textarea {
@@ -126,6 +126,12 @@ input:not(:placeholder-shown):valid {
 @media only screen and (min-width: 375px) {
   .modal-menu {
     width: 335px;
+  }
+  .modal-input {
+    width: 295px;
+  }
+  .modal-textarea {
+    width: 295px;
   }
   .modal-form-btn {
     min-width: 295px;

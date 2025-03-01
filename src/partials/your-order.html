@@ -22,9 +22,12 @@
             <input
               class="form-input"
               type="text"
-              name="name"
+              name="user-name"
+              id="user-name"
               placeholder="Full Name"
-              required
+              pattern="^[a-zA-Z\s]{3,}$" 
+              title="Name should only contain letters and spaces and be at least 3 characters long" required
+              
             >
             <input
               class="form-input input-email"

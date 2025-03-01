@@ -10,8 +10,8 @@
       out <span class="form-sub">the form</span> below and we will contact you!
     </p>
     <form class="form-modal" onsubmit="handleSubmit(event)" oninput="validateInputs()">
-      <input class="input form-input input-name" name="user-name" type="text" id="user-name" placeholder="Full Name" pattern="^[a-zA-Z\s]{3,}$" title="Name should only contain letters and spaces and be at least 3 characters long" required>
-      <input class="input form-input input-email" type="email" name="email" pattern="([A-z0-9_.-]+)@([A-z0-9_.-]+)\.([A-z]{2,8})" placeholder="Email" required>
+      <input class="modal-input modal-input-name" name="user-name" type="text" id="user-name" placeholder="Full Name" pattern="^[a-zA-Z\s]{3,}$" title="Name should only contain letters and spaces and be at least 3 characters long" required>
+      <input class="modal-input modal-input-email" type="email" name="email" pattern="([A-z0-9_.-]+)@([A-z0-9_.-]+)\.([A-z]{2,8})" placeholder="Email" required>
       <textarea name="form-textarea" class="modal-textarea" id="user-comment" placeholder="Comment"></textarea>
       <button class="modal-form-btn" type="submit" disabled>Send</button>
     </form>
