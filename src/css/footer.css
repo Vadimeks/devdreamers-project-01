@@ -114,7 +114,7 @@
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.footer-logo:hover,
+
 .footer-nav-link:hover,
 .address-list-link:hover,
 .footer-privacy-link:hover {
@@ -235,7 +235,7 @@
     max-width: 1080px;
   }
   
-    .footer-logo:hover,
+    
     .footer-nav-link:hover,
     .address-list-link:hover,
     .footer-privacy-link:hover {
@@ -243,7 +243,7 @@
       background-color: #d4bfc4;
     }
   
-    .footer-logo:focus,
+    
     .footer-nav-link:focus,
     .address-list-link:focus,
     .footer-privacy-link:focus {
